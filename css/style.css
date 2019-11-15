@@ -5,20 +5,23 @@
     font-size: 2em;
     font-weight: 900;
 }
-.content{
+
+.officer-backdrop{
     background-image: url("../img/Officers.jpeg");
     background-position: center;
-    height: 1000px;
+    height: 800px;
     background-size: cover;
 }
 
 h1,h2,h3,h4,h5,h6 {
     font-family: "Poppins";
 }
+
 .title{
     font-size:3.5em;
     font-weight: 900 !important;
 }
+
 .description{
     font-size: 2.5em;
 }
@@ -26,4 +29,24 @@ h1,h2,h3,h4,h5,h6 {
 .background-tint {
     background-color: rgba(197, 17, 98, .33); 
     background-blend-mode: multiply;
-  }
+}
+
+#upcoming-events{
+    background-color:white;
+    height:600px;
+}
+#our-friends{
+    background-color:white;
+    height:300px;
+}
+.large-title{
+    font-size:4em;
+    font-weight:900;
+}
+
+.footer{
+    color: white;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(69,6,35,1) 100%);
+    height: 240px;
+}
