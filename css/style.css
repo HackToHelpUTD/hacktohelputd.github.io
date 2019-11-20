@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive|Muli|Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,500,700,900|Poppins:300,400,500,700,900&display=swap');
 
 .navbar{
     font-family: "Muli";
     font-size: 2em;
-    font-weight: 900;
 }
 
 .officer-backdrop{
@@ -18,16 +17,16 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .title{
-    font-size:3.5em;
-    font-weight: 900 !important;
+    font-size:4em;
+    font-weight: 500 !important;
 }
 
 .description{
-    font-size: 2.5em;
+    font-size: 1.5em;
 }
 
 .background-tint {
-    background-color: rgba(197, 17, 98, .33); 
+    background-color: rgba(69,6,35, .55); 
     background-blend-mode: multiply;
 }
 
@@ -51,32 +50,3 @@ h1,h2,h3,h4,h5,h6 {
     height: 240px;
 }
 
-form {
-    /* This bit sets up the horizontal layout */
-    display:flex;
-    flex-direction:row;
-    
-    /* This bit draws the box around it */
-    border:1px solid grey;
-    /* I've used padding so you can see the edges of the elements. */
-    padding:2px;
-  }
-  
-  input {
-     /* Tell the input to use all the available space */
-    flex-grow:2;
-    /* And hide the input's outline, so the form looks like the outline */
-    border:none;
-  }
-  
-  input:focus {
-    /* removing the input focus blue box. Put this on the form if you like. */
-    outline: none;
-  }
-  button {
-    /* Just a little styling to make it pretty */
-    border:1px solid white;
-    background:#450623;
-    color:gray;
-    border-radius: 2px;
-  }
