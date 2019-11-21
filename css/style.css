@@ -32,11 +32,11 @@ h1,h2,h3,h4,h5,h6 {
 
 #upcoming-events{
     background-color:white;
-    height:600px;
+    height:100%;
 }
 #our-friends{
     background-color:white;
-    height:500px;
+    height:100%;
 }
 .large-title{
     font-size:4rem;
@@ -50,3 +50,7 @@ h1,h2,h3,h4,h5,h6 {
     height: 240px;
 }
 
+.our-friends-picture{
+    width:250px;
+    height:250px;
+}
