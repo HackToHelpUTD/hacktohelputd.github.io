@@ -40,7 +40,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .large-title{
     font-size:4rem;
-    font-weight:900;
+    font-weight:700;
 }
 
 .footer{
@@ -51,6 +51,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .our-friends-picture{
-    width:250px;
-    height:250px;
+    width:150px;
+    height:150px;
+}
+
+a .fab {
+    color: white;
 }
