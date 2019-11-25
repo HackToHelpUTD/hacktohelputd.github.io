@@ -96,6 +96,11 @@ a .fab {
     color:white;
 }
 
+#pastofficers{
+    background-color: rgba(69,6,35,1); 
+    color:white;
+}
+
 .officer-cards{
     color:black;
 }
@@ -116,4 +121,9 @@ a .fab {
     color:black;
     font-size: .5em;
     font-family: 'Muli';
+}
+
+#ouradvisor{
+    background-color: rgba(69,6,35,1); 
+    color:white;
 }
