@@ -90,3 +90,30 @@ a .fab {
     font-size: 1.4em;
 
 }
+
+#currentofficers{
+    background-color: rgba(69,6,35,1); 
+    color:white;
+}
+
+.officer-cards{
+    color:black;
+}
+
+.officer-headshot {
+    object-fit: cover;
+    object-position: 50% 50%;
+  
+    width: 10em;
+    height: 9em;
+  }
+.offcer-title{
+    font-size:.5em !important;
+    font-family: 'Muli';
+    color: black;
+}
+.officer-description{
+    color:black;
+    font-size: .5em;
+    font-family: 'Muli';
+}
