@@ -6,7 +6,7 @@
 }
 
 .officer-backdrop{
-    background-image: url("../img/Officers.jpeg");
+    background-image: url("../imgs/Officers.jpeg");
     background-position: center;
     height: 800px;
     background-size: cover;
@@ -64,7 +64,7 @@ a .fab {
 }
 
 .history-backdrop{
-    background-image: url("../img/about/backdrop_1.jpeg");
+    background-image: url("../imgs/about/backdrop_1.jpeg");
     background-position: center;
     height: 20%;
     background-size: cover;
@@ -72,7 +72,7 @@ a .fab {
     background-blend-mode: multiply;
 }
 .ourevents-backdrop{
-    background-image: url("../img/about/backdrop_2.jpeg");
+    background-image: url("../imgs/about/backdrop_2.jpeg");
     background-position: center;
     height: 20%;
     background-size: cover;
