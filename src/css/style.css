@@ -113,13 +113,13 @@ a .fab {
     height: 9em;
   }
 .offcer-title{
-    font-size:.5em !important;
+    font-size:.9em !important;
     font-family: 'Muli';
     color: black;
 }
 .officer-description{
     color:black;
-    font-size: .5em;
+    font-size: .8em;
     font-family: 'Muli';
 }
 
