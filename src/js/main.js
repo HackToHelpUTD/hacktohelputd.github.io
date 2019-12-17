@@ -4,7 +4,7 @@ submitForm = () => {
 }
 
 const homeNavBarAtTop = 'navbar navbar-expand-lg navbar-dark bg-transparent fixed-top pb-5';
-const homeNavBarBelow = 'navbar navbar-expand-lg navbar-light fixed-top about-nav bg-white';
+const homeNavBarBelow = 'navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm';
 const logoPath = './src/imgs/logo';
 
 getLogoLight = () => {
