@@ -1,104 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="src/js/main.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/cbd38cf910.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="src/css/style.css"  rel="stylesheet" >
+    <link href="src/css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hack To Help</title>
 </head>
-<body>
-  <div class='officer-backdrop background-tint'>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent pb-5">
-        <a class="navbar-brand" href="#"><img src="./src/imgs/logo.png" style='width:25%;height:25%' alt="logo"></a>
+
+
+<div class='officer-backdrop background-tint'>
+    <nav id='hnavBar' class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top pb-5">
+        <a class="navbar-brand" href="#"><img src="./src/imgs/logo.png" style=' width:25%;height:25% ' alt="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarText">
-          <ul class="nav navbar-nav pr-3">
-            <li class="nav-item px-3">
-              <a class="nav-link text-right" href="about.html">About<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item px-3">
-              <a class="nav-link text-right" href="team.html">Team</a>
-            </li>
-            <li class="nav-item px-3">
-              <a class="nav-link text-right" href="#">Events</a>
-            </li>
-            <li class="nav-item px-3">
-              <a class="nav-link text-right" href="#">Contact</a>
-            </li>
-            <li class="nav-item px-3">
-              <a class="nav-link text-right" href="#">Join</a>
-            </li>
-          </ul>
+            <ul class="nav navbar-nav pr-3">
+                <li class="nav-item px-3">
+                    <a class="nav-link text-right" href="about.html">About<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link text-right" href="team.html">Team</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link text-right" href="#">Events</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link text-right" href="#">Contact</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link text-right" href="#">Join</a>
+                </li>
+            </ul>
         </div>
-      </nav>
-      <div class = "pt-5"></div>
-      <div class = "pt-5"></div>
-      <div class = "pt-5"></div>
-      <div class = "pt-5"></div>
-      <div class='text-white pt-5'> 
-          <h1 class='title text-center'>Hack to Help</h1>
-          <div class = "pt-1"></div>
-          <div class='d-flex justify-content-center'>
-              <p class='description text-center' style="width:45%;">Debunking the myth of "The Genius Programmer" and promoting social good in<br>the process.</p>
-          </div>
-      </div>
+    </nav>
+    <div class="pt-5"></div>
+    <div class="pt-5"></div>
+    <div class="pt-5"></div>
+    <div class="pt-5"></div>
+    <div class='text-white pt-5 '>
+        <h1 class='title text-center '>Hack to Help</h1>
+        <div class="pt-1"></div>
+        <div class='d-flex justify-content-center '>
+            <p class='description text-center ' style="width:45%;">Debunking the myth of "The Genius Programmer" and promoting social good in<br>the process.</p>
+        </div>
     </div>
-    <div id='upcoming-events' class='pt-5'>
-      <div class='container'>
-        <h1 class='large-title'>Upcoming Events</h1>
-        <div class = "pt-5"></div>
-        <div class = "pt-5"></div>
-        <div class = "pt-5"></div>
-        <div class = "pt-5"></div>
-        <h1 class='text-center'>Coming Soon</h3>
-        <div class = "pt-5"></div>
-        <div class = "pt-5"></div>
-        <div class = "pt-5"></div>
-        <div class = "pt-5"></div> 
-      </div>
+</div>
+<div id='upcoming-events ' class='pt-5 '>
+    <div class='container '>
+        <h1 class='large-title '>Upcoming Events</h1>
+        <div class="pt-5"></div>
+        <div class="pt-5"></div>
+        <div class="pt-5"></div>
+        <div class="pt-5"></div>
+        <h1 class='text-center '>Coming Soon</h3>
+            <div class="pt-5"></div>
+            <div class="pt-5"></div>
+            <div class="pt-5"></div>
+            <div class="pt-5"></div>
     </div>
-    <div class='container'>
-      <h1 class='large-title text-left pb-5'>Our Friends</h1>
-      <div id='our-friends' class='text-center pb-5'> 
-          <a href="https://uxutd.com/" target="_blank" class="mx-5"><img src="./src/imgs/our_friends/UX Club Logo (Color).png" class='my-3 our-friends-picture' alt="UX Club"> </a>
-          <a href="https://pivotal.io/" target="_blank" class="mx-5"><img src="./src/imgs/our_friends/Pivotal Logo.png" class='my-3' width='250px' height='180px' alt="Pivotal"> </a>
-          <a href="https://www.facebook.com/pg/WITB.UTD/about/" target="_blank" class="mx-5"><img src="./src/imgs/our_friends/witb_logo.png" class='my-3 our-friends-picture' width='300px'alt="UX Club"> </a>
-      </div>
+</div>
+<section class="our-friends-section pt-5">
+    <div class='container '>
+        <h1 class='large-title text-left pb-5 '>Our Friends</h1>
+        <div id='our-friends ' class='text-center pb-5 '>
+            <a href="https://uxutd.com/" target="_blank" class="mx-5"><img src="./src/imgs/our_friends/UX Club Logo (Color).png" class='my-3 our-friends-picture ' alt="UX Club"> </a>
+            <a href="https://pivotal.io/" target="_blank" class="mx-5"><img src="./src/imgs/our_friends/Pivotal Logo.png" class='my-3 ' width='250px ' height='180px ' alt="Pivotal"> </a>
+            <a href="https://www.facebook.com/pg/WITB.UTD/about/" target="_blank" class="mx-5"><img src="./src/imgs/our_friends/witb_logo.png" class='my-3 our-friends-picture ' width='350px ' alt="UX Club"> </a>
+        </div>
     </div>
-    
-    <div class='footer'>
-      <div class='container'>
-        <div class = "pt-5"></div>
-        <div class = "pt-2"></div>
+</section>
+<section class='footer '>
+    <div class='container '>
+        <div class="pt-5"></div>
+        <div class="pt-2"></div>
         <h5>Sign up for updates</h5>
-        <div class='row'>
-          <div class='col-sm-3 offset-sm-0'>
-            <div id='email-form'>
-              <form action="https://hacktohelp.us20.list-manage.com/subscribe/post?u=9d9dde42077a7ca49677e8c3b&amp;id=d559bec18b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <input class="form-control" type="email" value="" name="EMAIL" placeholder="your email address">
-                <button type="submit" class="btn btn-light mb-2 mt-2" onclick="submitForm()">Submit</button>
-              </form>
+        <div class='row '>
+            <div class='col-sm-3 offset-sm-0 '>
+                <div id='email-form '>
+                    <form action="https://hacktohelp.us20.list-manage.com/subscribe/post?u=9d9dde42077a7ca49677e8c3b&amp;id=d559bec18b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <input class="form-control" type="email" value="" name="EMAIL" placeholder="your email address">
+                        <button type="submit" class="btn btn-light mb-2 mt-2" onclick="submitForm()">Submit</button>
+                    </form>
+                </div>
             </div>
-          </div>
-          <div class='col-md-6 offset-lg-3'>
-            <div class="d-flex justify-content-center">
-                <a href="https://www.facebook.com/HackToHelpUTD/" target="_blank"><i class="fab fa-facebook-square mx-2 fa-3x"></i></a>
-                <a href="https://www.instagram.com/hacktohelputd/" target="_blank"><i class="fab fa-instagram mx-2 fa-3x"></i></a>
-                <a href="https://twitter.com/hacktohelpUTD" target="_blank"><i class="fab fa-twitter-square mx-2 fa-3x"></i></a>
-                <a href="https://github.com/HackToHelpUTD" target="_blank"> <i class="fab fa-github-square mx-2 fa-3x"></i></a>
-              </div>
-          </div>
-        </div>        
-      </div>
+            <div class='col-md-6 offset-lg-3 '>
+                <div class="d-flex justify-content-center">
+                    <a href="https://www.facebook.com/HackToHelpUTD/" target="_blank"><i class="fab fa-facebook-square mx-2 fa-3x"></i></a>
+                    <a href="https://www.instagram.com/hacktohelputd/" target="_blank"><i class="fab fa-instagram mx-2 fa-3x"></i></a>
+                    <a href="https://twitter.com/hacktohelpUTD" target="_blank"><i class="fab fa-twitter-square mx-2 fa-3x"></i></a>
+                    <a href="https://github.com/HackToHelpUTD" target="_blank"> <i class="fab fa-github-square mx-2 fa-3x"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
-</body>
+</section>
+
 </html>
