@@ -2,186 +2,237 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/cbd38cf910.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="src/css/style.css" rel="stylesheet">
-    <link rel="icon" href="./src/imgs/logodark.png">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link href="src/css/style.css" rel="stylesheet" />
+    <link rel="icon" href="./src/imgs/logodark.png" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Hack To Help</title>
 </head>
 
-<body>
-    <div class='about-nav'>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent shadow-lg mb-5">
-            <a class="navbar-brand" href="index.html"><img src="./src/imgs/logolight.png" style='width:25%;height:25%' alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarText">
-                <ul class="nav navbar-nav pr-3">
-                    <li class="nav-item px-3">
-                        <a class="nav-link text-right" href="about.html">About<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item px-3">
-                        <a class="nav-link text-right active" href="#">Team</a>
-                    </li>
-                    <li class="nav-item px-3">
-                        <a class="nav-link text-right" href="#">Events</a>
-                    </li>
-                    <li class="nav-item px-3">
-                        <a class="nav-link text-right" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item px-3">
-                        <a class="nav-link text-right" href="#">Join</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
+    <a class="navbar-brand" href="index.html"><img src="./src/imgs/logodark.png" style="width:25%;height:25%" alt="logo" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+        <ul class="nav navbar-nav pr-3">
+            <li class="nav-item px-3">
+                <a class="nav-link text-right" href="about.html">About<span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link text-right active" href="#">Team</a>
+            </li>
+            <li class="nav-item px-3">
+                <a class="nav-link text-right" href="#">Events</a>
+            </li>
+            <li class="nav-item px-3">
+                <a class="nav-link text-right" href="#">Contact</a>
+            </li>
+            <li class="nav-item px-3">
+                <a class="nav-link text-right" href="#">Join</a>
+            </li>
+        </ul>
     </div>
-    <div class='content'>
-        <div class='container'>
-            <div id='currentofficers' class='rounded shadow-lg p-3'>
-                <h1 class='about-title'>Meet Our Officers</h1>
-                <div class="row officer-cards ">
-                    <div class="card mx-auto my-3">
-                        <img class="card-img-top officer-headshot" src="./src/imgs/officer_headshots/current/Ata.HEIC" alt="Card image cap">
-                        <div class="card-body">
-                            <h6 class="officer-title" style='font-size:.9em;'>Ata<br>Gowani</h6>
-                            <p class="officer-description">President</p>
-                        </div>
-                    </div>
-                    <div class="card mx-auto my-3">
-                        <img class="card-img-top officer-headshot" src="./src/imgs/officer_headshots/current/Alexis.HEIC" alt="Card image cap">
-                        <div class="card-body">
-                            <h6 class="officer-title" style='font-size:.9em;'>Alexis<br>Vu</h6>
-                            <p class="officer-description">Vice President</p>
-                        </div>
-                    </div>
-                    <div class="card mx-auto my-3">
-                        <img class="card-img-top officer-headshot" src="./src/imgs/officer_headshots/current/Jon.HEIC" alt="Card image cap">
-                        <div class="card-body">
-                            <h6 class="officer-title" style='font-size:.9em;'>Jon<br>Washington</h6>
-                            <p class="officer-description">Chief<br>Marketing Officer</p>
-                        </div>
-                    </div>
-                    <div class="card mx-auto my-3">
-                        <img class="card-img-top officer-headshot" src="./src/imgs/officer_headshots/current/Salwa.HEIC" alt="Card image cap">
-                        <div class="card-body">
-                            <h6 class="officer-title" style='font-size:.9em;'>Salwa<br>Maheen Haider</h6>
-                            <p class="officer-description">Designer</p>
-                        </div>
-                    </div>
-                    <div class="card mx-auto my-3">
-                        <img class="card-img-top officer-headshot" src="./src/imgs/officer_headshots/current/Radhika.HEIC" alt="Card image cap">
-                        <div class="card-body">
-                            <h6 class="officer-title" style='font-size:.9em;'>Radhika<br>Bhakta</h6>
-                            <p class="officer-description">Outreach<br>Coordinator</p>
-                        </div>
-                    </div>
-                    <div class="card mx-auto my-3">
-                        <img class="card-img-top officer-headshot" src="./src/imgs/officer_headshots/current/Christle.HEIC" alt="Card image cap">
-                        <div class="card-body">
-                            <h6 class="officer-title" style='font-size:.9em;'>Christle<br>Pinheiro</h6>
-                            <p class="officer-description">Secretary</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+</nav>
+<div class="pt-5"></div>
+<div class="pt-5"></div>
 
-        <div class='container pt-5'>
-            <div id='ouradvisor' class='rounded shadow-lg p-3'>
-                <h1 class='about-title'>Our Advisor</h1>
-                <div class='row officer-cards'>
-                    <div class="card mx-3 my-3">
-                        <img class="card-img-top officer-headshot" src="./src/imgs/officer_headshots/current/Christle.HEIC" alt="Card image cap">
-                        <div class="card-body">
-                            <h6 class="officer-title" style='font-size:.9em;'>Jason<br>Smith</h6>
-                            <p class="officer-description">Senior Lecturer</p>
+<body>
+    <div class="content mt-5">
+        <div class="officer-deck pb-5">
+            <div class="container">
+                <div id="currentofficers" class="rounded shadow-lg p-3">
+                    <h1 class="about-title">Meet Our Officers</h1>
+                    <div class="row officer-cards ">
+                        <div class="card mx-auto my-3">
+                            <img class="card-img-top officer-headshot" src="./src/imgs/officer_headshots/current/Ata.HEIC" alt="Card image cap" />
+                            <div class="card-body">
+                                <h6 class="officer-title" style="font-size:.9em;">
+                                    Ata<br />Gowani
+                                </h6>
+                                <p class="officer-description">President</p>
+                            </div>
+                        </div>
+                        <div class="card mx-auto my-3">
+                            <img class="card-img-top officer-headshot" src="./src/imgs/officer_headshots/current/Alexis.HEIC" alt="Card image cap" />
+                            <div class="card-body">
+                                <h6 class="officer-title" style="font-size:.9em;">
+                                    Alexis<br />Vu
+                                </h6>
+                                <p class="officer-description">Vice President</p>
+                            </div>
+                        </div>
+                        <div class="card mx-auto my-3">
+                            <img class="card-img-top officer-headshot" src="./src/imgs/officer_headshots/current/Jon.HEIC" alt="Card image cap" />
+                            <div class="card-body">
+                                <h6 class="officer-title" style="font-size:.9em;">
+                                    Jon<br />Washington
+                                </h6>
+                                <p class="officer-description">
+                                    Chief<br />Marketing Officer
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card mx-auto my-3">
+                            <img class="card-img-top officer-headshot" src="./src/imgs/officer_headshots/current/Salwa.HEIC" alt="Card image cap" />
+                            <div class="card-body">
+                                <h6 class="officer-title" style="font-size:.9em;">
+                                    Salwa<br />Maheen Haider
+                                </h6>
+                                <p class="officer-description">Designer</p>
+                            </div>
+                        </div>
+                        <div class="card mx-auto my-3">
+                            <img class="card-img-top officer-headshot" src="./src/imgs/officer_headshots/current/Radhika.HEIC" alt="Card image cap" />
+                            <div class="card-body">
+                                <h6 class="officer-title" style="font-size:.9em;">
+                                    Radhika<br />Bhakta
+                                </h6>
+                                <p class="officer-description">Outreach<br />Coordinator</p>
+                            </div>
+                        </div>
+                        <div class="card mx-auto my-3">
+                            <img class="card-img-top officer-headshot" src="./src/imgs/officer_headshots/current/Christle.HEIC" alt="Card image cap" />
+                            <div class="card-body">
+                                <h6 class="officer-title" style="font-size:.9em;">
+                                    Christle<br />Pinheiro
+                                </h6>
+                                <p class="officer-description">Secretary</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class='container py-5'>
-            <div id='pastofficers' class='rounded shadow-lg p-3'>
-                <h1 class='about-title'>Meet Our Past Officers</h1>
-                <div class="row officer-cards ">
-                    <div class="card mx-auto my-3">
-                        <img class="card-img-top officer-headshot" src="./src/imgs/officer_headshots/current/Ata.HEIC" alt="Card image cap">
-                        <div class="card-body">
-                            <h6 class="officer-title" style='font-size:.9em;'>Ata<br>Gowani</h6>
-                            <p class="officer-description">President</p>
+        <div class="officer-deck py-5" style="background-color: #fafafa;">
+            <div class="container pt-5">
+                <div id="ouradvisor" class="rounded shadow-lg p-3">
+                    <h1 class="about-title">Our Advisor</h1>
+                    <div class="row officer-cards">
+                        <div class="card mx-3 my-3">
+                            <img class="card-img-top officer-headshot" src="./src/imgs/officer_headshots/current/Christle.HEIC" alt="Card image cap" />
+                            <div class="card-body">
+                                <h6 class="officer-title" style="font-size:.9em;">
+                                    Jason<br />Smith
+                                </h6>
+                                <p class="officer-description">Senior Lecturer</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="card mx-auto my-3">
-                        <img class="card-img-top officer-headshot" src="./src/imgs/officer_headshots/past/Sobia.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h6 class="officer-title" style='font-size:.9em;'>Sobia<br>Ali</h6>
-                            <p class="officer-description">Vice President</p>
+                </div>
+            </div>
+        </div>
+        <div class="officer-deck" style="background-color: rgba(69,6,35,.05);">
+            <div class="container py-5">
+                <div id="pastofficers" class="rounded shadow-lg p-3">
+                    <h1 class="about-title">Meet Our Past Officers</h1>
+                    <div class="row officer-cards ">
+                        <div class="card mx-auto my-3">
+                            <img class="card-img-top officer-headshot" src="./src/imgs/officer_headshots/current/Ata.HEIC" alt="Card image cap" />
+                            <div class="card-body">
+                                <h6 class="officer-title" style="font-size:.9em;">
+                                    Ata<br />Gowani
+                                </h6>
+                                <p class="officer-description">President</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card mx-auto my-3">
-                        <img class="card-img-top officer-headshot" src="./src/imgs/officer_headshots/current/Jon.HEIC" alt="Card image cap">
-                        <div class="card-body">
-                            <h6 class="officer-title" style='font-size:.9em;'>Jon<br>Washington</h6>
-                            <p class="officer-description">Chief<br>Marketing Officer</p>
+                        <div class="card mx-auto my-3">
+                            <img class="card-img-top officer-headshot" src="./src/imgs/officer_headshots/past/Sobia.jpg" alt="Card image cap" />
+                            <div class="card-body">
+                                <h6 class="officer-title" style="font-size:.9em;">
+                                    Sobia<br />Ali
+                                </h6>
+                                <p class="officer-description">Vice President</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card mx-auto my-3">
-                        <img class="card-img-top officer-headshot" src="./src/imgs/officer_headshots/current/Salwa.HEIC" alt="Card image cap">
-                        <div class="card-body">
-                            <h6 class="officer-title" style='font-size:.9em;'>Aman<br>Jasani</h6>
-                            <p class="officer-description">Chief<br>Financial Officer</p>
+                        <div class="card mx-auto my-3">
+                            <img class="card-img-top officer-headshot" src="./src/imgs/officer_headshots/current/Jon.HEIC" alt="Card image cap" />
+                            <div class="card-body">
+                                <h6 class="officer-title" style="font-size:.9em;">
+                                    Jon<br />Washington
+                                </h6>
+                                <p class="officer-description">
+                                    Chief<br />Marketing Officer
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card mx-auto my-3">
-                        <img class="card-img-top officer-headshot" src="./src/imgs/officer_headshots/current/Alexis.HEIC" alt="Card image cap">
-                        <div class="card-body">
-                            <h6 class="officer-title" style='font-size:.9em;'>Alexis<br>Vu</h6>
-                            <p class="officer-description">Chief<br>Operations Officer</p>
+                        <div class="card mx-auto my-3">
+                            <img class="card-img-top officer-headshot" src="./src/imgs/officer_headshots/current/Salwa.HEIC" alt="Card image cap" />
+                            <div class="card-body">
+                                <h6 class="officer-title" style="font-size:.9em;">
+                                    Aman<br />Jasani
+                                </h6>
+                                <p class="officer-description">
+                                    Chief<br />Financial Officer
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card mx-auto my-3">
-                        <img class="card-img-top officer-headshot" src="./src/imgs/officer_headshots/past/Jonathan.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h6 class="officer-title" style='font-size:.9em;'>Jonathan<br>Harty</h6>
-                            <p class="officer-description">Chief<br>Curriculum Officer</p>
+                        <div class="card mx-auto my-3">
+                            <img class="card-img-top officer-headshot" src="./src/imgs/officer_headshots/current/Alexis.HEIC" alt="Card image cap" />
+                            <div class="card-body">
+                                <h6 class="officer-title" style="font-size:.9em;">
+                                    Alexis<br />Vu
+                                </h6>
+                                <p class="officer-description">
+                                    Chief<br />Operations Officer
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card mx-auto my-3">
+                            <img class="card-img-top officer-headshot" src="./src/imgs/officer_headshots/past/Jonathan.jpg" alt="Card image cap" />
+                            <div class="card-body">
+                                <h6 class="officer-title" style="font-size:.9em;">
+                                    Jonathan<br />Harty
+                                </h6>
+                                <p class="officer-description">
+                                    Chief<br />Curriculum Officer
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class='footer'>
-        <div class='container'>
+    <div class="footer">
+        <div class="container">
             <div class="pt-5"></div>
             <div class="pt-2"></div>
             <h5>Sign up for updates</h5>
-            <div class='row'>
-                <div class='col-sm-3 offset-sm-0'>
-                    <div id='email-form'>
+            <div class="row">
+                <div class="col-sm-3 offset-sm-0">
+                    <div id="email-form">
                         <form action="https://hacktohelp.us20.list-manage.com/subscribe/post?u=9d9dde42077a7ca49677e8c3b&amp;id=d559bec18b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                            <input class="form-control" type="email" value="" name="EMAIL" placeholder="your email address">
-                            <button type="submit" class="btn btn-light mb-2 mt-2" onclick="submitForm()">Submit</button>
+                            <input class="form-control" type="email" value="" name="EMAIL" placeholder="your email address" />
+                            <button type="submit" class="btn btn-light mb-2 mt-2" onclick="submitForm()">
+                  Submit
+                </button>
                         </form>
                     </div>
                 </div>
-                <div class='col-md-6 offset-lg-3'>
+                <div class="col-md-6 offset-lg-3">
                     <div class="d-flex justify-content-center">
-                        <a href="https://www.facebook.com/HackToHelpUTD/" target="_blank"><i class="fab fa-facebook-square mx-2 fa-3x"></i></a>
-                        <a href="https://www.instagram.com/hacktohelputd/" target="_blank"><i class="fab fa-instagram mx-2 fa-3x"></i></a>
-                        <a href="https://twitter.com/hacktohelpUTD" target="_blank"><i class="fab fa-twitter-square mx-2 fa-3x"></i></a>
-                        <a href="https://github.com/HackToHelpUTD" target="_blank"> <i class="fab fa-github-square mx-2 fa-3x"></i></a>
-                    </div>
-                </div>
+                        <a href="https://www.facebook.com/HackToHelpUTD/" target="_blank"><i class="fab fa-facebook-square mx-2 fa-3x"></i
+              ></a>
+                        <a href="https://www.instagram.com/hacktohelputd/" target="_blank"><i class="fab fa-instagram mx-2 fa-3x"></i
+              ></a>
+                        <a href="https://twitter.com/hacktohelpUTD" target="_blank"><i class="fab fa-twitter-square mx-2 fa-3x"></i
+              ></a>
+                        <a href="https://github.com/HackToHelpUTD" target="_blank">
+                            <i class="fab fa-github-square mx-2 fa-3x"></i
+              ></a>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+  </body>
+</html>
