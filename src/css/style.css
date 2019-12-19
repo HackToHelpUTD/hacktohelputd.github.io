@@ -169,3 +169,13 @@ fade:not(.show) {
 .our-friends-section {
     background-color: #fafafa;
 }
+
+@media only screen and (max-width: 768px) {
+    .officer-backdrop {
+        background-image: url("../imgs/Officers.jpeg");
+        background-position: center;
+        background-attachment: scroll;
+        height: 700px;
+        background-size: cover;
+    }
+}
