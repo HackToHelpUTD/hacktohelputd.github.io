@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Muli:300,400,500,700,900|Poppins:300,400,500,700,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,500,700,900|Poppins:300,400,500,700,900&display=swap");
 .navbar {
     font-family: "Muli";
     font-size: 2em;
@@ -7,6 +7,7 @@
 .officer-backdrop {
     background-image: url("../imgs/Officers.jpeg");
     background-position: center;
+    background-attachment: fixed;
     height: 700px;
     background-size: cover;
 }
@@ -30,7 +31,7 @@ h6 {
 }
 
 .background-tint {
-    background-color: rgba(69, 6, 35, .55);
+    background-color: rgba(69, 6, 35, 0.55);
     background-blend-mode: multiply;
 }
 
@@ -51,7 +52,7 @@ h6 {
 .footer {
     color: white;
     background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(69, 6, 35, 1) 100%);
+    background: linear-gradient( 0deg, rgba(0, 0, 0, 1) 0%, rgba(69, 6, 35, 1) 100%);
     height: 240px;
 }
 
@@ -73,7 +74,7 @@ a .fab {
     background-position: center;
     height: 20%;
     background-size: cover;
-    background-color: rgba(69, 6, 35, .8);
+    background-color: rgba(69, 6, 35, 0.8);
     background-blend-mode: multiply;
 }
 
@@ -82,18 +83,18 @@ a .fab {
     background-position: center;
     height: 20%;
     background-size: cover;
-    background-color: rgba(69, 6, 35, .8);
+    background-color: rgba(69, 6, 35, 0.8);
     background-blend-mode: multiply;
 }
 
 .about-title {
-    font-family: 'Muli';
+    font-family: "Muli";
     font-weight: 700;
     color: white;
 }
 
 .about-info {
-    font-family: 'Muli';
+    font-family: "Muli";
     color: white;
     font-size: 1.4em;
 }
@@ -120,15 +121,15 @@ a .fab {
 }
 
 .offcer-title {
-    font-size: .9em !important;
-    font-family: 'Muli';
+    font-size: 0.9em !important;
+    font-family: "Muli";
     color: black;
 }
 
 .officer-description {
     color: black;
-    font-size: .8em;
-    font-family: 'Muli';
+    font-size: 0.8em;
+    font-family: "Muli";
 }
 
 #ouradvisor {
@@ -145,19 +146,19 @@ a .fab {
 
 @-webkit-keyframes fade {
     from {
-        opacity: .4
+        opacity: 0.4;
     }
     to {
-        opacity: .6
+        opacity: 0.6;
     }
 }
 
 @keyframes fade {
     from {
-        opacity: .4
+        opacity: 0.4;
     }
     to {
-        opacity: .6
+        opacity: 0.6;
     }
 }
 
