@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="src/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/cbd38cf910.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link href="src/css/style.css" rel="stylesheet" />
+    <link rel="icon" href="./src/imgs/logodark.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hack To Help</title>
+</head>
+<div class="event-card">
+    <div class="event-card-container">
+        <div class="event-card-background rounded p-5 ">
+            <div class='pt-1'></div>
+            <h2 class="text-center">
+                An evening at Pivotal
+            </h2>
+            <p class="text-center" style="font-size:.9rem;">
+                Join us at Pivotal for an Extreme Programming Workshop! You will get hands on coding experience using XP practices. Food and the necessary hardware will be provided! Tickets are free, but limited so get them fast! </p>
+            <span><img class='float-right' style='width:58px;height:56px' src="./src/imgs/logolight.png" alt="Hack to Help Logo"></span>
+            <div class="pt-4"></div>
+            <i class="fas fa-map-marker-alt"></i> ECSS 2.309 Jan. 20, 2019
+
+
+        </div>
+        <div class="event-card-content p-3 grayout">
+            <h1 style="font-size:2rem;" class="description text-center">An evening at Pivotal</h2>
+                <p style="font-size:1.7rem;" class="text-center">
+                    Join us at Pivotal for an Extreme Programming Workshop! You will get hands on coding experience using XP practices. Food and the necessary hardware will be provided! Tickets are free, but limited so get them fast!
+                </p>
+
+        </div>
+    </div>
+</div>
+
+</html>
+
+<style>
+    .grayout {
+        opacity: 0.05;
+        /* Real browsers */
+        filter: alpha(opacity=5);
+        /* MSIE */
+    }
+    
+    .event-card {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .event-card-content {
+        color: white;
+    }
+    
+    .event-card-container {
+        position: relative;
+        height: 100%;
+    }
+    
+    .event-card-background {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        overflow: hidden;
+        background-color: #13020a;
+        color: #fafafa;
+    }
+</style>
