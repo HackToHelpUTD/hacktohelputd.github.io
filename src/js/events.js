@@ -9,7 +9,7 @@
  * @param {int} width
  * @param {int} height
  */
-const create_event_card = (
+const createEventCard = (
     container_id,
     event_name,
     event_description,
@@ -25,7 +25,7 @@ const create_event_card = (
         return;
     }
 
-    let card = $('<div class="event-card m-auto"></div>');
+    let card = $('<div class="event-card mt-3 mx-2"></div>');
     card.width(width);
     card.height(height);
     card_content_container = $("<div class='event-card-container'>");
@@ -43,7 +43,7 @@ const create_event_card = (
                 <img class='float-right' style='width:58px;height:56px' src="./src/imgs/logolight.png" alt="Hack to Help Logo">
             </span>
             <div class="pt-4"></div>
-            <i class="fas fa-map-marker-alt"></i> ${event_location} ${event_date} @ ${event_time}
+            <i class="fas fa-map-marker-alt"></i> ${event_location} - ${event_date} @ ${event_time}
         </div>`;
     let card_foreground = $(card_foreground_string);
 
@@ -58,5 +58,21 @@ const create_event_card = (
     card_content_container.append(card_foreground);
     card_content_container.append(card_background);
     card.append(card_content_container);
+    //For expandable cards to be finished later ...
+    // card.click(function() {
+    //     $(this).toggleClass("event-card-active");
+    //     $(this)
+    //         .siblings()
+    //         .not(this)
+    //         .toggleClass("hide");
+    //     if ($(this).hasClass("event-card-active")) {
+    //         $(this).width("1000%");
+    //         $(this).height("1000%");
+    //     } else {
+    //         $(this).width("100%");
+    //         $(this).height("100%");
+    //     }
+    // });
+
     element.append(card);
 };

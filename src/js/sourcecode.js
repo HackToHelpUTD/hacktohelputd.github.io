@@ -1,4 +1,4 @@
-const create_sourcecode_card = (
+const createSourceCodeCard = (
     container_id,
     project_name,
     project_description,

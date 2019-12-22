@@ -49,11 +49,30 @@ h6 {
     font-weight: 700;
 }
 
+#slogan {
+    width: 45%;
+}
+
+@media only screen and (max-width: 768px) {
+    #slogan {
+        width: 100%;
+    }
+}
+
+
+/** Footer **/
+
 .footer {
     color: white;
     background: rgb(0, 0, 0);
     background: linear-gradient( 0deg, rgba(0, 0, 0, 1) 0%, rgba(69, 6, 35, 1) 100%);
-    height: 240px;
+    height: 280px;
+}
+
+@media only screen and (max-width: 768px) {
+    #footer-socials {
+        padding-top: 10%;
+    }
 }
 
 .our-friends-picture {
