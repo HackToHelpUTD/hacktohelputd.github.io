@@ -1,6 +1,9 @@
 const eventGoogleSheetUrl =
     "https://docs.google.com/spreadsheets/d/1Mn0sNuAVtIQA6pk5qU2IE3w0jyXmUa1i8KhnUJR9PXU/edit?usp=sharing";
-
+/**
+ * Fetch the event google sheet data.
+ * @param {string} googleSheetsUrl
+ */
 const loadEventData = googleSheetsUrl => {
     Tabletop.init({
         key: googleSheetsUrl,
@@ -24,7 +27,7 @@ const processEventData = (data, tabletop) => {
     );
 };
 /**
- *
+ * Create an event card.
  * @param {string} container_id
  * @param {string} event_name
  * @param {string} event_description
@@ -56,8 +59,8 @@ const createEventCard = (
     card_content_container = $("<div class='event-card-container'>");
 
     card_foreground_string = `
-        <div class="event-card-background rounded p-5 ">
-            <div class='pt-1'></div>
+        <div class="event-card-background rounded p-md-5 p-3">
+            <div class='pt-md-1'></div>
             <h2 class="text-center">
                 ${event_name}
             </h2>
@@ -67,7 +70,7 @@ const createEventCard = (
             <span>
                 <img class='float-right' style='width:58px;height:56px' src="./src/imgs/logolight.png" alt="Hack to Help Logo">
             </span>
-            <div class="pt-4"></div>
+            <div class="pt-md-4"></div>
             <i class="fas fa-map-marker-alt"></i> ${event_location} - ${event_date} @ ${event_time}
         </div>`;
     let card_foreground = $(card_foreground_string);
