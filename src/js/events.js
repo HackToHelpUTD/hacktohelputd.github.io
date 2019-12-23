@@ -1,15 +1,15 @@
-const gSheetUrl =
+const eventGoogleSheetUrl =
     "https://docs.google.com/spreadsheets/d/1Mn0sNuAVtIQA6pk5qU2IE3w0jyXmUa1i8KhnUJR9PXU/edit?usp=sharing";
 
 const loadEventData = googleSheetsUrl => {
     Tabletop.init({
         key: googleSheetsUrl,
-        callback: processData,
+        callback: processEventData,
         simpleSheet: true
     });
 };
 
-const processData = (data, tabletop) => {
+const processEventData = (data, tabletop) => {
     data.forEach(event =>
         createEventCard(
             "root",
@@ -103,5 +103,5 @@ const createEventCard = (
 };
 
 $(document).ready(() => {
-    loadEventData(gSheetUrl);
+    loadEventData(eventGoogleSheetUrl);
 });

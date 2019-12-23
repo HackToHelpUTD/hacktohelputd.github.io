@@ -1,3 +1,23 @@
+const sourceCodeGoogleSheetUrl =
+    "https://docs.google.com/spreadsheets/d/1A7Fqgj1_d0XaVn3AEdnnJRFNjYKgllGRLyaug2PTtgQ/edit?usp=sharing";
+const loadSourceCodeData = googleSheetsUrl => {
+    Tabletop.init({
+        key: googleSheetsUrl,
+        callback: processSourceCodeData,
+        simpleSheet: true
+    });
+};
+
+const processSourceCodeData = (data, tabletop) => {
+    data.forEach(event =>
+        createSourceCodeCard(
+            "source-code-root",
+            event["Project Name"],
+            event["Project Description"],
+            event["Project Download Link"]
+        )
+    );
+};
 const createSourceCodeCard = (
     container_id,
     project_name,
@@ -20,3 +40,7 @@ const createSourceCodeCard = (
 
     container.append(element);
 };
+
+$(document).ready(() => {
+    loadSourceCodeData(sourceCodeGoogleSheetUrl);
+});
