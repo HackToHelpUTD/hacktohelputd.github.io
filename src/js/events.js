@@ -1,3 +1,6 @@
+const gSheetUrl =
+    "https://docs.google.com/spreadsheets/d/1Mn0sNuAVtIQA6pk5qU2IE3w0jyXmUa1i8KhnUJR9PXU/edit?usp=sharing";
+
 const loadEventData = googleSheetsUrl => {
     Tabletop.init({
         key: googleSheetsUrl,
@@ -7,8 +10,18 @@ const loadEventData = googleSheetsUrl => {
 };
 
 const processData = (data, tabletop) => {
-    alert("Successfully processed!");
-    console.log(data);
+    data.forEach(event =>
+        createEventCard(
+            "root",
+            event["Event Name"],
+            event["Event Description"],
+            event["Event Location"],
+            event["Event Date"],
+            event["Event Time"],
+            550,
+            300
+        )
+    );
 };
 /**
  *
@@ -88,3 +101,7 @@ const createEventCard = (
 
     element.append(card);
 };
+
+$(document).ready(() => {
+    loadEventData(gSheetUrl);
+});
