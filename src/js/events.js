@@ -1,3 +1,15 @@
+const loadEventData = googleSheetsUrl => {
+    Tabletop.init({
+        key: googleSheetsUrl,
+        callback: processData,
+        simpleSheet: true
+    });
+};
+
+const processData = (data, tabletop) => {
+    alert("Successfully processed!");
+    console.log(data);
+};
 /**
  *
  * @param {string} container_id
