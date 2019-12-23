@@ -16,10 +16,30 @@ getLogoLight = () => {
 getLogoDark = () => {
     return logoPath + "dark.png";
 };
-
-window.onload = () => {
+setSplashTextDisplay = () => {
+    if (!$("#splashtext").is(":hidden")) {
+        $("#splashtext").hide("slide", { direction: "down" }, 250);
+    } else {
+        $("#splashtext").show("slide", { direction: "down" }, 250);
+    }
+};
+setNavToggleClick = () => {
+    $("#navToggler").click(function() {
+        setSplashTextDisplay();
+    });
+};
+$(window).resize(function() {
+    //display splash text if person is resizing may need to just auto show splash text
+    if ($("#navToggler").is(":hidden")) {
+        $("#splashtext").show();
+    }
+});
+$(document).ready(() => {
     window.navBar = $("#hnavBar");
     window.navState = null;
+
+    window.splashtext = $("#splashtext");
+    setNavToggleClick();
     window.addEventListener("scroll", function(e) {
         const navHeight = window.navBar.height();
         const navBottom = $(window).scrollTop() + navHeight;
@@ -38,4 +58,4 @@ window.onload = () => {
             $("#navlogo").attr("src", getLogoLight());
         }
     });
-};
+});
