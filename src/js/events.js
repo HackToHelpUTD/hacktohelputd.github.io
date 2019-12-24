@@ -1,4 +1,4 @@
-const comingSoon = $(`<div>
+const eventsComingSoon = $(`<div>
     <div class="pt-5"></div>
     <div class="pt-5"></div>
     <div class="pt-5"></div>
@@ -9,7 +9,7 @@ const comingSoon = $(`<div>
     <div class="pt-5"></div>
     <div class="pt-5"></div>
     </div>`);
-const loading = $(`<div class="text-center" id="events-loading" >
+const eventsLoading = $(`<div class="text-center" id="events-loading" >
   <div class="spinner-border" style="width: 3rem; height: 3rem; margin: 50%; " role="status">
     <span class="sr-only">Loading...</span>
   </div>
@@ -21,7 +21,7 @@ const eventGoogleSheetUrl =
  * @param {string} googleSheetsUrl
  */
 const loadEventData = googleSheetsUrl => {
-  $("#root").append(loading);
+  $("#root").append(eventsLoading);
   Tabletop.init({
     key: googleSheetsUrl,
     callback: processEventData,
@@ -35,7 +35,7 @@ const loadEventData = googleSheetsUrl => {
  */
 const processEventData = (data, tabletop) => {
   if (data.length == 0) {
-    $("#root").append(comingSoon);
+    $("#root").append(eventsComingSoon);
   } else {
     data.forEach(event =>
       createEventCard(

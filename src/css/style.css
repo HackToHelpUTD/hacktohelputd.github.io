@@ -248,6 +248,12 @@ fade:not(.show) {
 #events-comingsoon {
   height: 316px;
 }
+#sourcecode-loading {
+  height: 316px;
+}
+#sourcecode-comingsoon {
+  height: 316px;
+}
 .event-card-active {
   height: 1000%;
   width: 1000%;
