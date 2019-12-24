@@ -1,99 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <!-- Lib to scrap google sheets data-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js"></script>
 
-    <script src="https://kit.fontawesome.com/cbd38cf910.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/cbd38cf910.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="src/js/events.js"></script>
     <script src="src/js/sourcecode.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+      integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+      integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+      crossorigin="anonymous"
+    ></script>
     <script src="src/js/main.js"></script>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <link href="src/css/style.css" rel="stylesheet" />
     <link rel="icon" href="./src/imgs/logodark.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Hack To Help</title>
-</head>
-<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
-    <a class="navbar-brand" href="./"><img src="./src/imgs/logodark.png" style="width:25%;height:25%" alt="logo" /></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+  </head>
+  <nav
+    class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm"
+  >
+    <a class="navbar-brand" href="./"
+      ><img
+        src="./src/imgs/logodark.png"
+        style="width:25%;height:25%"
+        alt="logo"
+    /></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarText"
+      aria-controls="navbarText"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarText">
-        <ul class="nav navbar-nav pr-3">
-            <li class="nav-item px-3">
-                <a class="nav-link text-right" href="about">About</a
-          >
+      <ul class="nav navbar-nav pr-3">
+        <li class="nav-item px-3">
+          <a class="nav-link text-right" href="about">About</a>
         </li>
         <li class="nav-item px-3">
           <a class="nav-link text-right" href="team">Team</a>
-            </li>
-            <li class="nav-item px-3">
-                <a class="nav-link text-right active" href="#">Events<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item px-3">
-                <a class="nav-link text-right" href="#">Contact</a>
-            </li>
-            <li class="nav-item px-3">
-                <a class="nav-link text-right" href="#">Join</a>
-            </li>
-        </ul>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link text-right active" href="#"
+            >Events<span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link text-right" href="#">Contact</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link text-right" href="#">Join</a>
+        </li>
+      </ul>
     </div>
-</nav>
-<div class="pt-5"></div>
-<div class="pt-5"></div>
-<div id="upcoming-events-section">
+  </nav>
+  <div class="pt-5"></div>
+  <div class="pt-5"></div>
+  <div id="upcoming-events-section">
     <div class="container">
-        <h1>Upcoming Events</h1>
+      <h1>Upcoming Events</h1>
     </div>
 
-    <div class="d-flex align-items-center justify-content-center flex-wrap" id="root">
-        <!-- Events get injected here-->
+    <div
+      class="d-flex align-items-center justify-content-center flex-wrap"
+      id="root"
+    >
+      <!-- Events get injected here-->
     </div>
-</div>
+  </div>
 
-<div id="source-code-section" class="mt-3 py-3">
+  <div id="source-code-section" class="mt-3 py-3">
     <div class="container">
-        <h1>Available Source Code</h1>
-        <div class="d-flex align-items-center justify-content-center flex-wrap" id="source-code-loading-area">
+      <h1>Available Source Code</h1>
+      <div
+        class="d-flex align-items-center justify-content-center flex-wrap"
+        id="source-code-loading-area"
+      >
         <div id="source-code-root" class="card-columns">
-            <!--Source Code Cards get injected here-->
+          <!--Source Code Cards get injected here-->
         </div>
+      </div>
     </div>
-</div>
-<section class="footer">
+  </div>
+  <section class="footer">
     <div class="container ">
-        <div class="pt-5"></div>
-        <div class="pt-md-5"></div>
-        <h5>Sign up for updates</h5>
-        <div class="row ">
-            <div class="col-md-4 offset-sm-0 col-sm-3">
-                <div id="email-form ">
-                    <form action="https://hacktohelp.us20.list-manage.com/subscribe/post?u=9d9dde42077a7ca49677e8c3b&amp;id=d559bec18b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <input class="form-control" type="email" value="" name="EMAIL" placeholder="your email address" />
-                        <button type="submit" class="btn btn-light mb-2 mt-2" onclick="submitForm()">
+      <div class="pt-5"></div>
+      <div class="pt-md-5"></div>
+      <h5>Sign up for updates</h5>
+      <div class="row ">
+        <div class="col-md-4 offset-sm-0 col-sm-3">
+          <div id="email-form ">
+            <form
+              action="https://hacktohelp.us20.list-manage.com/subscribe/post?u=9d9dde42077a7ca49677e8c3b&amp;id=d559bec18b"
+              method="post"
+              id="mc-embedded-subscribe-form"
+              name="mc-embedded-subscribe-form"
+              class="validate"
+              target="_blank"
+              novalidate
+            >
+              <input
+                class="form-control"
+                type="email"
+                value=""
+                name="EMAIL"
+                placeholder="your email address"
+              />
+              <button
+                type="submit"
+                class="btn btn-light mb-2 mt-2"
+                onclick="submitForm()"
+              >
                 Submit
               </button>
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-3 offset-md-5">
-                <div id="footer-socials" class="d-flex justify-content-center">
-                    <a href="https://www.facebook.com/HackToHelpUTD/" target="_blank"><i class="fab fa-facebook-square mx-2 fa-3x"></i
+            </form>
+          </div>
+        </div>
+        <div class="col-md-3 offset-md-5">
+          <div id="footer-socials" class="d-flex justify-content-center">
+            <a href="https://www.facebook.com/HackToHelpUTD/" target="_blank"
+              ><i class="fab fa-facebook-square mx-2 fa-3x"></i
             ></a>
-                    <a href="https://www.instagram.com/hacktohelputd/" target="_blank"><i class="fab fa-instagram mx-2 fa-3x"></i
+            <a href="https://www.instagram.com/hacktohelputd/" target="_blank"
+              ><i class="fab fa-instagram mx-2 fa-3x"></i
             ></a>
-                    <a href="https://twitter.com/hacktohelpUTD" target="_blank"><i class="fab fa-twitter-square mx-2 fa-3x"></i
+            <a href="https://twitter.com/hacktohelpUTD" target="_blank"
+              ><i class="fab fa-twitter-square mx-2 fa-3x"></i
             ></a>
-                    <a href="https://github.com/HackToHelpUTD" target="_blank">
-                        <i class="fab fa-github-square mx-2 fa-3x"></i
+            <a href="https://github.com/HackToHelpUTD" target="_blank">
+              <i class="fab fa-github-square mx-2 fa-3x"></i
             ></a>
           </div>
         </div>
