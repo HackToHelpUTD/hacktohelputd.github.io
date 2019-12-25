@@ -10,7 +10,7 @@ const eventsComingSoon = $(`<div>
     <div class="pt-5"></div>
     </div>`);
 const eventsLoading = $(`<div class="text-center" id="events-loading" >
-  <div class="spinner-border" style="width: 3rem; height: 3rem; margin: 50%; " role="status">
+  <div class="spinner-border" style="width: 3rem; height: 3rem; margin-top:100px;" role="status">
     <span class="sr-only">Loading...</span>
   </div>
 </div>`);
@@ -45,7 +45,7 @@ const processEventData = (data, tabletop) => {
         event["Event Location"],
         event["Event Date"],
         event["Event Time"],
-        550,
+        500,
         300
       )
     );

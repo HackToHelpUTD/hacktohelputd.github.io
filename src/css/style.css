@@ -243,6 +243,7 @@ fade:not(.show) {
 }
 #events-loading {
   height: 316px;
+  width: 1000px;
 }
 #events-comingsoon {
   height: 316px;
