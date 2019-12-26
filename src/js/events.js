@@ -35,6 +35,8 @@ const loadEventData = googleSheetsUrl => {
  */
 const processEventData = (data, tabletop) => {
   if (data.length == 0) {
+    $("#root").removeClass("justify-content-start");
+    $("#root").addClass("justify-content-center");
     $("#root").append(eventsComingSoon);
   } else {
     data.forEach(event =>
