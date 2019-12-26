@@ -1,3 +1,22 @@
+const eventCardModal = $(`<div class="modal fade" id="eventCardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document" >
+    <div class="modal-content" id='eventCardModal-Content' style="background-color: rgba(0,0,0,.0001) !important;" >
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>`);
 const eventsComingSoon = $(`<div>
     <div class="pt-5"></div>
     <div class="pt-5"></div>
@@ -114,25 +133,17 @@ const createEventCard = (
   card_content_container.append(card_foreground);
   card_content_container.append(card_background);
   card.append(card_content_container);
-  //For expandable cards to be finished later ...
-  // card.click(function() {
-  //     $(this).toggleClass("event-card-active");
-  //     $(this)
-  //         .siblings()
-  //         .not(this)
-  //         .toggleClass("hide");
-  //     if ($(this).hasClass("event-card-active")) {
-  //         $(this).width("1000%");
-  //         $(this).height("1000%");
-  //     } else {
-  //         $(this).width("100%");
-  //         $(this).height("100%");
-  //     }
-  // });
+
+  card.click(function(e) {
+    $("#eventCardModal").modal("show");
+    const eCard = $(this);
+    $("#eventCardModal-Content").html(eCard.html());
+  });
 
   element.append(card);
 };
 
 $(document).ready(() => {
+  eventCardModal.appendTo(document.body);
   loadEventData(eventGoogleSheetUrl);
 });

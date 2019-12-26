@@ -158,13 +158,6 @@ a .fab {
   color: white;
 }
 
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;
@@ -218,7 +211,9 @@ fade:not(.show) {
   width: 100%;
   height: 100%;
 }
-
+.event-card:hover {
+  cursor: pointer;
+}
 .event-card-content {
   color: white;
 }
@@ -253,10 +248,6 @@ fade:not(.show) {
 }
 #sourcecode-comingsoon {
   height: 316px;
-}
-.event-card-active {
-  height: 1000%;
-  width: 1000%;
 }
 
 .hide {
