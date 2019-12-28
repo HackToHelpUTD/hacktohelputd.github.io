@@ -3,7 +3,7 @@
   font-family: "Muli";
   font-size: 2em;
 }
-
+/* Index Page */
 .officer-backdrop {
   background-image: url("../imgs/Officers.jpeg");
   background-position: center;
@@ -51,10 +51,28 @@ h6 {
 #slogan {
   width: 45%;
 }
+.our-friends-section {
+  background-color: #fafafa;
+}
+
+.our-friends-picture {
+  width: 200px;
+  height: 200px;
+}
 
 @media only screen and (max-width: 768px) {
   #slogan {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .officer-backdrop {
+    background-image: url("../imgs/Officers.jpeg");
+    background-position: center;
+    background-attachment: scroll;
+    height: 700px;
+    background-size: cover;
   }
 }
 
@@ -77,15 +95,10 @@ h6 {
   }
 }
 
-.our-friends-picture {
-  width: 200px;
-  height: 200px;
-}
-
 a .fab {
   color: white;
 }
-
+/* About */
 .about-nav {
   background-color: #450623;
 }
@@ -119,7 +132,7 @@ a .fab {
   color: white;
   font-size: 1.4em;
 }
-
+/* Team Page */
 #currentofficers {
   background-color: rgba(69, 6, 35, 1);
   color: white;
@@ -180,24 +193,6 @@ fade:not(.show) {
   opacity: 1 !important;
 }
 
-.our-friends-section {
-  background-color: #fafafa;
-}
-
-#source-code-section {
-  background-color: #fafafa;
-}
-
-@media only screen and (max-width: 768px) {
-  .officer-backdrop {
-    background-image: url("../imgs/Officers.jpeg");
-    background-position: center;
-    background-attachment: scroll;
-    height: 700px;
-    background-size: cover;
-  }
-}
-
 .grayout {
   opacity: 0.05;
   /* Real browsers */
@@ -249,6 +244,10 @@ fade:not(.show) {
 #sourcecode-comingsoon {
   height: 316px;
 }
+#source-code-section {
+  background-color: #fafafa;
+}
+
 /*** Join Us****/
 .joinus-backdrop {
   background-image: url("../imgs/joinus/joinus-banner.png");
@@ -290,5 +289,9 @@ fade:not(.show) {
   .linklist-container {
     border-right: none;
     height: 200px;
+  }
+
+  .joinus-backdrop {
+    background-attachment: scroll;
   }
 }
