@@ -249,7 +249,39 @@ fade:not(.show) {
 #sourcecode-comingsoon {
   height: 316px;
 }
-
+/*** Join Us****/
+.joinus-description {
+  height: 250px;
+}
+.linklist-container {
+  border-right: thin solid black;
+  height: 200px;
+}
+.linklist {
+  padding: 0;
+}
+.linklist li {
+  list-style-type: none;
+  font-size: 1.5em;
+  color: rgb(69, 6, 35);
+  width: 100%;
+}
+.linklist li > a {
+  width: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  color: rgb(69, 6, 35);
+}
+.linklist li > a:hover {
+  text-decoration: none;
+}
 .hide {
   display: none;
+}
+@media only screen and (max-width: 768px) {
+  .linklist-container {
+    border-right: none;
+    height: 200px;
+  }
 }
