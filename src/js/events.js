@@ -138,6 +138,8 @@ const createEventCard = (
     $("#eventCardModal").modal("show");
     const eCard = $(this);
     $("#eventCardModal-Content").html(eCard.html());
+    $("#eventCardModal-Content").width(eCard.width());
+    $("#eventCardModal-Content").height(eCard.height());
   });
 
   element.append(card);
