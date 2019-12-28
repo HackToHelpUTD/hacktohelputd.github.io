@@ -11,7 +11,13 @@
   height: 700px;
   background-size: cover;
 }
-
+.joinus-backdrop {
+  background-image: url("../imgs/joinus/joinus-banner.png");
+  background-position: center;
+  background-attachment: fixed;
+  height: 500px;
+  background-size: contain;
+}
 h1,
 h2,
 h3,
