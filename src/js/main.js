@@ -32,7 +32,7 @@ const setNavToggleClick = () => {
 const scrollCheck = () => {
   const navHeight = window.navBar.height();
   const navBottom = $(window).scrollTop() + navHeight;
-  const backGroundHeight = $(".officer-backdrop").height();
+  const backGroundHeight = $("#backdrop").height();
   if (navBottom > backGroundHeight) {
     if (window.navState !== 0) {
       navBar.removeClass();
