@@ -257,7 +257,7 @@ fade:not(.show) {
   background-size: cover;
 }
 .joinus-description {
-  height: 250px;
+  height: 100px;
 }
 .linklist-container {
   border-right: thin solid black;
