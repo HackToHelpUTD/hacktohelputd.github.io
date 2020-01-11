@@ -1,4 +1,4 @@
-$mobile: 768px;
+@import "Variables";
 .footer {
   color: white;
   background: rgb(0, 0, 0);
@@ -10,7 +10,7 @@ $mobile: 768px;
   height: 280px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $mobile) {
   #footer-socials {
     padding-top: 10%;
   }
