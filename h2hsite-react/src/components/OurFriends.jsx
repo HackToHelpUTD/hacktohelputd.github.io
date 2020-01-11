@@ -49,6 +49,7 @@ class OurFriends extends Component {
       </React.Fragment>
     );
   };
+
   render() {
     return (
       <section className="our-friends-section pt-5">
