@@ -7,7 +7,7 @@ class Footer extends Component {
   renderSocials = () => {
     return (
       <div className="col-md-3 offset-md-5">
-        <div id="footer-socials" class="d-flex justify-content-center">
+        <div id="footer-socials" className="d-flex justify-content-center">
           <a
             href="https://www.facebook.com/HackToHelpUTD/"
             target="_blank"
@@ -50,13 +50,13 @@ class Footer extends Component {
             method="post"
             id="mc-embedded-subscribe-form"
             name="mc-embedded-subscribe-form"
-            class="validate"
+            className="Validate"
             target="_blank"
             rel="noopener noreferrer"
-            novalidate
+            noValidate
           >
             <input
-              class="form-control"
+              className="form-control"
               type="email"
               value=""
               name="EMAIL"
@@ -64,7 +64,7 @@ class Footer extends Component {
             />
             <button
               type="submit"
-              class="btn btn-light mb-2 mt-2"
+              className="btn btn-light mb-2 mt-2"
               onclick="submitForm()"
             >
               Submit
