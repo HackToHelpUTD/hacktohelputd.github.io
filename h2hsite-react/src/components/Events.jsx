@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { init, getAllEvents, getEvent } from "../scripts/Models/Events";
+import { init, getAllEvents } from "../scripts/Models/Events";
 import Event from "./Event";
 
 class Events extends Component {

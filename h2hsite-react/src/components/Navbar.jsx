@@ -33,7 +33,7 @@ class Navbar extends Component {
         id="hnavBar"
         className="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top pb-5"
       >
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           <img
             id="navlogo"
             src={LogoLight}
@@ -94,7 +94,7 @@ class Navbar extends Component {
         id="hnavBar"
         className="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm"
       >
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           <img
             id="navlogo"
             src={LogoDark}
@@ -152,7 +152,14 @@ class Navbar extends Component {
   render() {
     const { light } = this.state;
     if (light) return <React.Fragment>{this.renderLight()}</React.Fragment>;
-    else return <React.Fragment>{this.renderDark()}</React.Fragment>;
+    else
+      return (
+        <React.Fragment>
+          {this.renderDark()}
+          <div className="pb-5"></div>
+          <div className="pb-5"></div>
+        </React.Fragment>
+      );
   }
 }
 

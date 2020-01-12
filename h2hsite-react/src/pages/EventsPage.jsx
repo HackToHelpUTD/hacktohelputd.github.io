@@ -1,25 +1,23 @@
 import React, { Component } from "react";
 import UpcomingEvents from "../components/UpcomingEvents";
-import HomepageBanner from "../components/HomepageBanner";
 import Navbar from "../components/Navbar";
 import NavbarSwitch from "../components/NavbarSwitch";
 import Footer from "../components/Footer";
-import OurFriends from "../components/OurFriends";
+import SourceCode from "../components/SourceCode";
 
-class HomePage extends Component {
+class EventsPage extends Component {
   state = {};
   render() {
     return (
       <React.Fragment>
-        <Navbar />
-        <HomepageBanner />
         <NavbarSwitch />
+        <Navbar />
         <UpcomingEvents />
-        <OurFriends />
+        <SourceCode />
         <Footer />
       </React.Fragment>
     );
   }
 }
 
-export default HomePage;
+export default EventsPage;

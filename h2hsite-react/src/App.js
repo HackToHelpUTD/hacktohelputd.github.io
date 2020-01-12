@@ -1,8 +1,9 @@
 import React from "react";
 import "./App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Homepage from "./pages/Homepage";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import EventsPage from "./pages/EventsPage";
 function App() {
   return (
     <div className="App">
@@ -15,13 +16,13 @@ function App() {
             <h1>Team Page</h1>
           </Route>
           <Route path="/events">
-            <h1>Events Page</h1>
+            <EventsPage />
           </Route>
           <Route path="/join">
             <h1>Join Page</h1>
           </Route>
           <Route path="/">
-            <Homepage />
+            <HomePage />
           </Route>
         </Switch>
       </Router>
