@@ -1,21 +1,30 @@
 import React from "react";
 import "./App.scss";
-import Footer from "./components/Footer";
-import OurFriends from "./components/OurFriends";
 import "bootstrap/dist/css/bootstrap.min.css";
-import UpcomingEvents from "./components/UpcomingEvents";
-import HomepageBanner from "./components/HomepageBanner";
-import Navbar from "./components/Navbar";
-import NavbarSwitch from "./components/NavbarSwitch";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Homepage from "./pages/Homepage";
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <HomepageBanner />
-      <NavbarSwitch />
-      <UpcomingEvents />
-      <OurFriends />
-      <Footer />
+      <Router>
+        <Switch>
+          <Route path="/about">
+            <h1>About Page</h1>
+          </Route>
+          <Route path="/team">
+            <h1>Team Page</h1>
+          </Route>
+          <Route path="/events">
+            <h1>Events Page</h1>
+          </Route>
+          <Route path="/join">
+            <h1>Join Page</h1>
+          </Route>
+          <Route path="/">
+            <Homepage />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
