@@ -18,7 +18,7 @@ class Event extends Component {
       <div className="event-card-background rounded p-md-5 p-3">
         <div className="pt-md-1"></div>
         <h2 className="text-center">{name}</h2>
-        <p class="text-center" style={this.cardDescriptionStyle}>
+        <p className="text-center" style={this.cardDescriptionStyle}>
           {description}
         </p>
         <span>
@@ -29,8 +29,8 @@ class Event extends Component {
             alt="Hack to Help Logo"
           />
         </span>
-        <div class="pt-md-4"></div>
-        <i class="fas fa-map-marker-alt"></i> {location} - {date} @ {time}
+        <div className="pt-md-4"></div>
+        <i className="fas fa-map-marker-alt"></i> {location} - {date} @ {time}
       </div>
     );
   };
@@ -38,7 +38,7 @@ class Event extends Component {
   renderCardBackground = () => {
     const { name, description } = this.props;
     return (
-      <div class="event-card-content p-3 grayout">
+      <div className="event-card-content p-3 grayout">
         <h1 style={{ fontSize: "2rem" }} className="description text-center">
           {name}
         </h1>

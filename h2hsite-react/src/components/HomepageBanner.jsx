@@ -6,10 +6,10 @@ class HomepageBanner extends Component {
     return (
       <React.Fragment>
         <div id="backdrop" className="officer-backdrop background-tint">
-          <div class="pt-5"></div>
-          <div class="pt-5"></div>
-          <div class="pt-5"></div>
-          <div class="pt-5"></div>
+          <div className="pt-5"></div>
+          <div className="pt-5"></div>
+          <div className="pt-5"></div>
+          <div className="pt-5"></div>
           <div id="splashtext" className="text-white pt-5">
             <h1 className="title text-center">Hack to Help</h1>
             <div className="pt-1"></div>
