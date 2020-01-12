@@ -10,7 +10,9 @@ class UpcomingEvents extends Component {
         <div id="upcoming-events-section">
           <div className="container">
             <h1>Upcoming Events</h1>
-            <Events />
+            <div className="d-flex align-items-center justify-content-start flex-wrap">
+              <Events />
+            </div>
           </div>
         </div>
       </section>

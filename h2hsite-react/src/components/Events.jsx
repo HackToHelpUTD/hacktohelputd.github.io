@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { init, getAllEvents, getEvent } from "../scripts/Models/Events";
+import Event from "./Event";
 
 class Events extends Component {
   state = { loading: true, events: [] };
@@ -43,12 +44,27 @@ class Events extends Component {
       </div>
     );
   };
+
+  renderEvents = () => {
+    const { events } = this.state;
+    return events.map(event => (
+      <Event
+        key={event["Event Name"]}
+        name={event["Event Name"]}
+        description={event["Event Description"]}
+        location={event["Event Location"]}
+        date={event["Event Date"]}
+        time={event["Event Time"]}
+      />
+    ));
+  };
   render() {
     const { loading, events } = this.state;
     if (loading) {
       return <React.Fragment>{this.renderLoading()}</React.Fragment>;
     } else {
-      if (events.length > 0) return <h1>Hi</h1>;
+      if (events.length > 0)
+        return <React.Fragment>{this.renderEvents()}</React.Fragment>;
       else {
         return <React.Fragment>{this.renderNoEvents()}</React.Fragment>;
       }

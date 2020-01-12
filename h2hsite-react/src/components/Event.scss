@@ -1,0 +1,39 @@
+.event-card {
+  width: 100%;
+  height: 100%;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.event-card-content {
+  color: white;
+  position: relative;
+  height: 100%;
+}
+
+.event-card-background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  overflow: hidden;
+  background-color: #13020a;
+  color: #fafafa;
+}
+
+.event-card-container {
+  position: relative;
+  height: 100%;
+}
+
+.grayout {
+  opacity: 0.05;
+  /* Real browsers */
+  filter: alpha(opacity=5);
+  /* MSIE */
+}
