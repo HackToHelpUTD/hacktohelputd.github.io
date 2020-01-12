@@ -6,10 +6,10 @@ class UpcomingEvents extends Component {
 
   render() {
     return (
-      <section className="upcomingevents-component">
+      <section className="upcomingevents-component py-3">
         <div id="upcoming-events-section">
           <div className="container">
-            <h1>Upcoming Events</h1>
+            <h1 className="large-title">Upcoming Events</h1>
             <div className="d-flex align-items-center justify-content-start flex-wrap">
               <Events />
             </div>

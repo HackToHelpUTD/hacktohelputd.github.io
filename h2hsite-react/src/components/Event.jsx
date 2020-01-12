@@ -4,9 +4,7 @@ import LightLogo from "../imgs/logolight.png";
 
 class Event extends Component {
   state = {};
-  constructor(props) {
-    super(props);
-  }
+
   cardImageStyle = {
     width: "58px",
     height: "56px"

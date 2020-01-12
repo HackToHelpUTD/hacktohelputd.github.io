@@ -1,0 +1,24 @@
+@import "Variables";
+
+.officer-backdrop {
+  background-image: url("../imgs/Officers.jpeg");
+  background-position: center;
+  background-attachment: fixed;
+  height: 700px;
+  background-size: cover;
+}
+
+.background-tint {
+  background-color: rgba(69, 6, 35, 0.55);
+  background-blend-mode: multiply;
+}
+
+#slogan {
+  width: 45%;
+}
+
+@media only screen and (max-width: $mobile) {
+  #slogan {
+    width: 100%;
+  }
+}
