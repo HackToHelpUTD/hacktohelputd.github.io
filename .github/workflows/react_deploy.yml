@@ -19,7 +19,7 @@ jobs:
         run: ls
       - name: Install Packages
         run: cd h2hsite-react && npm install
-      - name: Deploy to GH Pages
-        run: cd h2hsite-react && npm run deploy
+      - name: GitHub Pages Deploy
+        uses: maxheld83/ghpages@v0.2.1
       - name: Updating Domain
         run: echo "Update domain"
