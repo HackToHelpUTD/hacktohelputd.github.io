@@ -21,7 +21,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: react-build # The branch the action should deploy to.
+          BRANCH: master # The branch the action should deploy to.
           FOLDER: h2hsite-react/build # The folder the action should deploy.
       - name: Updating Domain
         run: echo "Update domain"
