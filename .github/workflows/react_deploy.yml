@@ -25,7 +25,7 @@ jobs:
       - name: Copy Build Folder
         run: |
           mkdir build
-          cp -r ./h2hsite-react/build ./build
+          cp -a ./h2hsite-react/build ./build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
