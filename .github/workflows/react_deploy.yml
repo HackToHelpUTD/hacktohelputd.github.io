@@ -21,7 +21,11 @@ jobs:
       - name: Install Packages
         run: cd h2hsite-react && npm install
       - name: Build
-        run: mkdir build && touch build/index.html #cd h2hsite-react && npm build
+        run: cd h2hsite-react && npm build
+      - name: Copy Build Folder
+          run: |
+            mkdir build
+            cp -r ./h2hsite-react ./build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
