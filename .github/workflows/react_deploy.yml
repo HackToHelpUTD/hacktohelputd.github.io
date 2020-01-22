@@ -17,11 +17,13 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install Packages
         run: cd h2hsite-react && npm install
-      - name: Build and Deploy
+      - name: Build
+        run: cd h2hsite-react && npm build
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: master # The branch the action should deploy to.
+          BRANCH: react-build # The branch the action should deploy to.
           FOLDER: h2hsite-react/build # The folder the action should deploy.
       - name: Updating Domain
         run: echo "Update domain"
