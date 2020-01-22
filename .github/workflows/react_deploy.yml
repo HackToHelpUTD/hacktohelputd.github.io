@@ -21,7 +21,7 @@ jobs:
       - name: Install Packages
         run: cd h2hsite-react && npm install
       - name: Build
-        run: cd h2hsite-react && npm build
+        run: cd h2hsite-react && npm run-script build
       - name: Copy Build Folder
         run: |
           mkdir build
@@ -30,7 +30,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: react-build # The branch the action should deploy to.
+          BRANCH: master # The branch the action should deploy to.
           FOLDER: build # The folder the action should deploy.
       - name: Updating Domain
         run: echo "Update domain"
