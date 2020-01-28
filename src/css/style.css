@@ -68,7 +68,7 @@ h6 {
 
 @media only screen and (max-width: 768px) {
   .officer-backdrop {
-    background-image: url("../imgs/Officers.jpeg");
+    background-image: url("../imgs/Officers.jpg");
     background-position: center;
     background-attachment: scroll;
     height: 700px;
