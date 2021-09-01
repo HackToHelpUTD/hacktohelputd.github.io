@@ -1,229 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
 
-    <script
-      src="https://kit.fontawesome.com/cbd38cf910.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
-      integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
-      integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
-      crossorigin="anonymous"
-    ></script>
-    <script src="src/js/main.js"></script>
-    <script src="src/js/contact.js"></script>
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link href="src/css/style.css" rel="stylesheet" />
-    <link rel="icon" href="./src/imgs/logodark.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Hack To Help</title>
-  </head>
-  <nav
-    class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top pb-5"
-    id="hnavBar"
-  >
-    <a class="navbar-brand" href="./"
-      ><img
-        id="navlogo"
-        src="./src/imgs/logolight.png"
-        style="width: 25%; height: 25%"
-        alt="logo"
-    /></a>
-    <button
-      class="navbar-toggler"
-      id="navToggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarText"
-      aria-controls="navbarText"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarText">
-      <ul class="nav navbar-nav pr-3">
-        <li class="nav-item px-3">
-          <a class="nav-link text-right" href="about">About</a>
-        </li>
-        <li class="nav-item px-3">
-          <a class="nav-link text-right" href="team">Team</a>
-        </li>
-        <li class="nav-item px-3">
-          <a class="nav-link text-right" href="events">Events</a>
-        </li>
-        <li class="nav-item px-3">
-          <a class="nav-link text-right active" href="#"
-            >Join<span class="sr-only">(current)</span></a
-          >
-        </li>
-        <li class="nav-item px-3">
-          <a class="nav-link text-right" id="contactLink" href="#">Contact</a>
-        </li>
-      </ul>
+<head>
+  <meta charset="UTF-8" />
+
+  <script src="https://kit.fontawesome.com/cbd38cf910.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+    integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+    integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+    crossorigin="anonymous"></script>
+  <script src="src/js/main.js"></script>
+  <script src="src/js/contact.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link href="src/css/style.css" rel="stylesheet" />
+  <link rel="icon" href="./src/imgs/logodark.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Hack To Help</title>
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top pb-5" id="hnavBar">
+  <a class="navbar-brand" href="./"><img id="navlogo" src="./src/imgs/logolight.png" style="width: 25%; height: 25%"
+      alt="logo" /></a>
+  <button class="navbar-toggler" id="navToggler" type="button" data-toggle="collapse" data-target="#navbarText"
+    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+    <ul class="nav navbar-nav pr-3">
+      <li class="nav-item px-3">
+        <a class="nav-link text-right" href="about">About</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link text-right" href="team">Team</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link text-right" href="events">Events</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link text-right active" href="#">Join<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link text-right" id="contactLink" href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div id="backdrop" class="joinus-backdrop background-tint"></div>
+<div class="pt-5"></div>
+
+<div class="container-fluid">
+  <h1 class="text-center">Join Us</h1>
+  <div class="row py-5">
+    <div class="col-md-4">
+      <h1 class="text-center"><i class="far fa-comment-alt fa-3x"></i></h1>
+      <h1 class="text-center">GroupMe</h1>
+      <div class="container">
+        <p class="joinus-description">
+          Join our GroupMe and chat with us today! Get the latest Hack To Help
+          news and chat with others in the community!
+        </p>
+        <div class="linklist-container">
+          <ul class="linklist">
+            <li>
+              <a href="https://groupme.com/join_group/43988117/8rEfke" target="_blank">Click to Join!</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </nav>
-  <div id="backdrop" class="joinus-backdrop background-tint"></div>
-  <div class="pt-5"></div>
-
-  <div class="container-fluid">
-    <h1 class="text-center">Join Us</h1>
-    <div class="row py-5">
-      <div class="col-md-4">
-        <h1 class="text-center"><i class="far fa-comment-alt fa-3x"></i></h1>
-        <h1 class="text-center">GroupMe</h1>
-        <div class="container">
-          <p class="joinus-description">
-            Join our GroupMe and chat with us today! Get the latest Hack To Help
-            news and chat with others in the community!
-          </p>
-          <div class="linklist-container">
-            <ul class="linklist">
-              <li>
-                <a
-                  href="https://groupme.com/join_group/43988117/8rEfke"
-                  target="_blank"
-                  >Click to Join!</a
-                >
-              </li>
-            </ul>
-          </div>
+    <div class="col-md-4">
+      <h1 class="text-center"><i class="fas fa-users fa-3x"></i></h1>
+      <h1 class="text-center">Socials</h1>
+      <div class="container">
+        <p class="joinus-description">
+          Connect with us on our various social media pages. This is the best
+          way to get get updates on events and pictures from them too. Hack to
+          Help is on Facebook, Instagram, Twitter and LinkedIn!
+        </p>
+        <div class="linklist-container">
+          <ul class="linklist">
+            <li>
+              <a href="https://www.facebook.com/HackToHelpUTD/" target="_blank">Facebook</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/hacktohelputd/" target="_blank">Instagram</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/hacktohelpUTD" target="_blank">Twitter</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/hack-to-help" target="_blank">LinkedIn</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="col-md-4">
-        <h1 class="text-center"><i class="fas fa-users fa-3x"></i></h1>
-        <h1 class="text-center">Socials</h1>
-        <div class="container">
-          <p class="joinus-description">
-            Connect with us on our various social media pages. This is the best
-            way to get get updates on events and pictures from them too. Hack to
-            Help is on Facebook, Instagram, Twitter and LinkedIn!
-          </p>
-          <div class="linklist-container">
-            <ul class="linklist">
-              <li>
-                <a
-                  href="https://www.facebook.com/HackToHelpUTD/"
-                  target="_blank"
-                  >Facebook</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/hacktohelputd/"
-                  target="_blank"
-                  >Instagram</a
-                >
-              </li>
-              <li>
-                <a href="https://twitter.com/hacktohelpUTD" target="_blank"
-                  >Twitter</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/company/hack-to-help"
-                  target="_blank"
-                  >LinkedIn</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+      <a href="https://hacktohelp.typeform.com/to/uVNEkgdJ">
         <h1 class="text-center"><i class="fas fa-user-plus fa-3x"></i></h1>
-        <h1 class="text-center">Apply</h1>
-        <div class="container">
-          <p class="joinus-description">
-            Apply now to join our great team of officers. Help with workshops
-            and more.
-          </p>
-          <div class="linklist-container">
-            <ul class="linklist">
-              <li>
-                <a
-                  href="https://hacktohelp.typeform.com/to/uVNEkgdJ"
-                  target="_blank"
-                  >Apply</a
-                >
-              </li>
-            </ul>
-          </div>
+      </a>
+      <h1 class="text-center">Apply</h1>
+      <div class="container">
+        <p class="joinus-description">
+          Apply now to join our great team of officers. Help with workshops
+          and more.
+        </p>
+        <div class="linklist-container">
+          <ul class="linklist">
+            <li>
+              <a href="https://hacktohelp.typeform.com/to/uVNEkgdJ" target="_blank">Apply for Open Positions</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
-  <section class="footer">
-    <div class="container">
-      <div class="pt-5"></div>
-      <div class="pt-md-5"></div>
-      <h5>Sign up for updates</h5>
-      <div class="row">
-        <div class="col-md-4 offset-sm-0 col-sm-3">
-          <div id="email-form ">
-            <form
-              action="https://hacktohelp.us20.list-manage.com/subscribe/post?u=9d9dde42077a7ca49677e8c3b&amp;id=d559bec18b"
-              method="post"
-              id="mc-embedded-subscribe-form"
-              name="mc-embedded-subscribe-form"
-              class="validate"
-              target="_blank"
-              novalidate
-            >
-              <input
-                class="form-control"
-                type="email"
-                value=""
-                name="EMAIL"
-                placeholder="your email address"
-              />
-              <button
-                type="submit"
-                class="btn btn-light mb-2 mt-2"
-                onclick="submitForm()"
-              >
-                Submit
-              </button>
-            </form>
-          </div>
+</div>
+<section class="footer">
+  <div class="container">
+    <div class="pt-5"></div>
+    <div class="pt-md-5"></div>
+    <h5>Sign up for updates</h5>
+    <div class="row">
+      <div class="col-md-4 offset-sm-0 col-sm-3">
+        <div id="email-form ">
+          <form
+            action="https://hacktohelp.us20.list-manage.com/subscribe/post?u=9d9dde42077a7ca49677e8c3b&amp;id=d559bec18b"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+            target="_blank" novalidate>
+            <input class="form-control" type="email" value="" name="EMAIL" placeholder="your email address" />
+            <button type="submit" class="btn btn-light mb-2 mt-2" onclick="submitForm()">
+              Submit
+            </button>
+          </form>
         </div>
-        <div class="col-md-3 offset-md-5">
-          <div id="footer-socials" class="d-flex justify-content-center">
-            <a href="https://www.facebook.com/HackToHelpUTD/" target="_blank"
-              ><i class="fab fa-facebook-square mx-2 fa-3x"></i
-            ></a>
-            <a href="https://www.instagram.com/hacktohelputd/" target="_blank"
-              ><i class="fab fa-instagram mx-2 fa-3x"></i
-            ></a>
-            <a href="https://twitter.com/hacktohelpUTD" target="_blank"
-              ><i class="fab fa-twitter-square mx-2 fa-3x"></i
-            ></a>
-            <a href="https://github.com/HackToHelpUTD" target="_blank">
-              <i class="fab fa-github-square mx-2 fa-3x"></i
-            ></a>
-          </div>
+      </div>
+      <div class="col-md-3 offset-md-5">
+        <div id="footer-socials" class="d-flex justify-content-center">
+          <a href="https://www.facebook.com/HackToHelpUTD/" target="_blank"><i
+              class="fab fa-facebook-square mx-2 fa-3x"></i></a>
+          <a href="https://www.instagram.com/hacktohelputd/" target="_blank"><i
+              class="fab fa-instagram mx-2 fa-3x"></i></a>
+          <a href="https://twitter.com/hacktohelpUTD" target="_blank"><i
+              class="fab fa-twitter-square mx-2 fa-3x"></i></a>
+          <a href="https://github.com/HackToHelpUTD" target="_blank">
+            <i class="fab fa-github-square mx-2 fa-3x"></i></a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 </html>
