@@ -5,7 +5,7 @@
 }
 /* Index Page */
 .officer-backdrop {
-  background-image: url("../imgs/Officers.jpg");
+  background-image: url("../imgs/officer_headshots/current/Team.jpg");
   background-position: center;
   background-attachment: fixed;
   height: 700px;
@@ -102,7 +102,7 @@ a:hover {
 
 @media only screen and (max-width: 768px) {
   .officer-backdrop {
-    background-image: url("../imgs/Officers.jpg");
+    background-image: url("../imgs/officer_headshots/current/Team.jpg");
     background-position: center;
     background-attachment: scroll;
     height: 700px;
