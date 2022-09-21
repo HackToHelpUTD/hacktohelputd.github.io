@@ -3,32 +3,34 @@ const sourceCodeComingSoon = $(`<div>
     <div class="pt-5"></div>
     <div class="pt-5"></div>
     <div class="pt-5"></div>
-    <h1 class='text-center'>Coming Soon</h3>
+    <h3 class='text-center' id='source-comingsoon'>Coming Soon</h3>
     <div class="pt-5"></div>
     <div class="pt-5"></div>
     <div class="pt-5"></div>
     <div class="pt-5"></div>
     </div>`);
 const sourceCodeLoading = $(`<div class="text-center" id="sourcecode-loading" >
-  <div class="spinner-border" style="width: 3rem; height: 3rem; margin: 50%; " role="status">
+  <div class="spinner-border" style="width: 3rem; height: 3rem; margin-top: 100%; " role="status">
     <span class="sr-only">Loading...</span>
   </div>
 </div>`);
 const sourceCodeGoogleSheetUrl =
   "https://docs.google.com/spreadsheets/d/1A7Fqgj1_d0XaVn3AEdnnJRFNjYKgllGRLyaug2PTtgQ/edit?usp=sharing";
 const loadSourceCodeData = googleSheetsUrl => {
-  $("#source-code-root").append(sourceCodeLoading);
-  Tabletop.init({
+  $("#source-code-root").append(sourceCodeComingSoon);
+  /*Tabletop.init({
     key: googleSheetsUrl,
     callback: processSourceCodeData,
     simpleSheet: true
   });
+  */
 };
 
 const processSourceCodeData = (data, tabletop) => {
   if (data.length == 0) {
     $("#source-code-loading-area").append(sourceCodeComingSoon);
   } else {
+    console.log('processSourseCodeData was called');
     data.forEach(event =>
       createSourceCodeCard(
         "source-code-root",

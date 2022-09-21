@@ -40,12 +40,50 @@ const eventGoogleSheetUrl =
  * @param {string} googleSheetsUrl
  */
 const loadEventData = googleSheetsUrl => {
-  $("#root").append(eventsLoading);
+  //$("#root").append(eventCardModal);
+  $("#root").addClass("justify-content-center");
+  createEventCard(
+    "root",
+    "Bake Sale",
+    "Come support our club by buying cake pops from our stall. Help us raise money so we can plan some wonderful workshops for our members.",
+    "SU Lobby",
+    "Tuesday Sept. 27nd",
+    " 11am-6pm",
+    500,
+    310,
+    ""
+  )
+  createEventCard(
+    "root",
+    "Fall 2022 Kick Off",
+    "Join us for our Fall Kickoff event. Come meet out officers, checkout our workshop lineup, and other event plans for the semester.",
+    "Location TBD",
+    "Tuesday Sept. 27th",
+    "7 PM",
+    500,
+    310,
+    " RSVP by Sept, 24th"
+  )
+  /*
+  createEventCard(
+    "root",
+    "Workshop #1: React",
+    "Event Description",
+    "Location TBD",
+    "Wednesday Nov. 5th",
+    "7 PM",
+    500,
+    310,
+    " RSVP by Nov. 3rd"
+  )
+  */
+  /** 
   Tabletop.init({
     key: googleSheetsUrl,
     callback: processEventData,
     simpleSheet: true
   });
+  */
 };
 /**
  * Call back for load event data
@@ -56,7 +94,7 @@ const processEventData = (data, tabletop) => {
   if (data.length == 0) {
     $("#root").removeClass("justify-content-start");
     $("#root").addClass("justify-content-center");
-    $("#root").append(eventsComingSoon);
+    $("#root").append(eventsLoading);
   } else {
     data.forEach(event =>
       createEventCard(
@@ -83,6 +121,7 @@ const processEventData = (data, tabletop) => {
  * @param {string} event_time
  * @param {int} width
  * @param {int} height
+ * @param {string} rsvp_date
  */
 const createEventCard = (
   container_id,
@@ -92,7 +131,8 @@ const createEventCard = (
   event_date,
   event_time,
   width,
-  height
+  height,
+  rsvp_date
 ) => {
   const element = $("#" + container_id);
   if (element.length === 0) {
@@ -106,22 +146,27 @@ const createEventCard = (
   card_content_container = $("<div class='event-card-container'>");
 
   card_foreground_string = `
-        <div class="event-card-background rounded p-md-5 p-3">
+        <div class="event-card-background rounded p-md-4 p-3">
             <div class='pt-md-1'></div>
-            <h2 class="text-center">
+            <h2 class="text-center" id="event-title">
                 ${event_name}
             </h2>
-            <p class="text-center" style="font-size:.9rem;">
+            <p id="event_description" class="text-center" style="font-size:.9rem;">
             ${event_description}
             </p>
-            <span>
-                <img class='float-right' style='width:58px;height:56px' src="./src/imgs/logolight.png" alt="Hack to Help Logo">
-            </span>
-            <div class="pt-md-4"></div>
-            <i class="fas fa-map-marker-alt"></i> ${event_location} - ${event_date} @ ${event_time}
+            <div class="pt-md-4 text-center">
+            <i class="fas fa-map-marker-alt"></i> ${event_location} | ${event_date}  | ${event_time}
+            </div>
+            <div class="text-center" id="rsvp-container" style="margin-top:20px; height:50px; padding:5px; border-radius: 10px; vertical-align: middle">
+                <img style='width:36px;height:35px' src="./src/imgs/logolight.png" alt="Hack to Help Logo">
+                <span style="text-align: center; width:80%">
+                  ${rsvp_date}
+                </span>
+            </div>
         </div>`;
   let card_foreground = $(card_foreground_string);
 
+  /*
   let card_background_string = `<div class="event-card-content p-3 grayout">
             <h1 style="font-size:2rem;" class="description text-center">${event_name}</h2>
                 <p style="font-size:1.7rem;" class="text-center">
@@ -129,9 +174,10 @@ const createEventCard = (
                 </p>
         </div>`;
   let card_background = $(card_background_string);
+  */
 
   card_content_container.append(card_foreground);
-  card_content_container.append(card_background);
+  //card_content_container.append(card_background);
   card.append(card_content_container);
 
   card.click(function(e) {
