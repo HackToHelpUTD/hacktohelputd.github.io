@@ -48,7 +48,7 @@ const loadEventData = googleSheetsUrl => {
     "Come support our club by buying cake pops from our stall. Help us raise money so we can plan some wonderful workshops for our members.",
     "SU Lobby",
     "Tuesday Sept. 27nd",
-    " 11am-6pm",
+    "11am-6pm",
     500,
     310,
     ""
@@ -57,7 +57,7 @@ const loadEventData = googleSheetsUrl => {
     "root",
     "Fall 2022 Kick Off",
     "Join us for our Fall Kickoff event. Come meet out officers, checkout our workshop lineup, and other event plans for the semester.",
-    "Location TBD",
+    "Location SCI 2.210",
     "Tuesday Sept. 27th",
     "7 PM",
     500,
