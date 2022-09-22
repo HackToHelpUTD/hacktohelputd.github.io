@@ -57,7 +57,7 @@ const loadEventData = googleSheetsUrl => {
     "root",
     "Fall 2022 Kick Off",
     "Join us for our Fall Kickoff event. Come meet out officers, checkout our workshop lineup, and other event plans for the semester.",
-    "Location SCI 2.210",
+    "SCI 2.210",
     "Tuesday Sept. 27th",
     "7 PM",
     500,
