@@ -44,26 +44,29 @@ const loadEventData = googleSheetsUrl => {
   $("#root").addClass("justify-content-center");
   createEventCard(
     "root",
+    "Fall 2022 Kick Off",
+    "Join us for our Fall Kickoff event. Come meet out officers, checkout our workshop lineup, and learn about other events we plan on hosting during this semester.",
+    "SCI 2.210",
+    "Tuesday Sept. 27th",
+    "7 PM",
+    500,
+    310,
+    " RSVP",
+    "https://forms.gle/biD9n93TfdXkKayo7"
+  )
+  createEventCard(
+    "root",
     "Bake Sale",
-    "Come support our club by buying cake pops from our stall. Help us raise money so we can plan some wonderful workshops for our members.",
+    "Come support our club by buying cake pops from our stall. Help us raise money so we can plan some amazing workshops for our members.",
     "SU Lobby",
     "Tuesday Sept. 27nd",
     "11am-6pm",
     500,
     310,
+    "",
     ""
   )
-  createEventCard(
-    "root",
-    "Fall 2022 Kick Off",
-    "Join us for our Fall Kickoff event. Come meet out officers, checkout our workshop lineup, and other event plans for the semester.",
-    "Location SCI 2.210",
-    "Tuesday Sept. 27th",
-    "7 PM",
-    500,
-    310,
-    " RSVP by Sept, 24th"
-  )
+  
   /*
   createEventCard(
     "root",
@@ -122,6 +125,7 @@ const processEventData = (data, tabletop) => {
  * @param {int} width
  * @param {int} height
  * @param {string} rsvp_date
+ * @param {string} rsvp_link
  */
 const createEventCard = (
   container_id,
@@ -132,7 +136,8 @@ const createEventCard = (
   event_time,
   width,
   height,
-  rsvp_date
+  rsvp_date,
+  rsvp_link
 ) => {
   const element = $("#" + container_id);
   if (element.length === 0) {
@@ -157,12 +162,15 @@ const createEventCard = (
             <div class="pt-md-4 text-center">
             <i class="fas fa-map-marker-alt"></i> ${event_location} | ${event_date}  | ${event_time}
             </div>
-            <div class="text-center" id="rsvp-container" style="margin-top:20px; height:50px; padding:5px; border-radius: 10px; vertical-align: middle">
+            <a href=${rsvp_link} target="_blank">
+              <div class="text-center" id="rsvp-container" style="margin-top:20px; height:50px; padding:5px; border-radius: 10px; vertical-align: middle">
                 <img style='width:36px;height:35px' src="./src/imgs/logolight.png" alt="Hack to Help Logo">
                 <span style="text-align: center; width:80%">
                   ${rsvp_date}
                 </span>
-            </div>
+              </div>
+            </a>
+            
         </div>`;
   let card_foreground = $(card_foreground_string);
 
