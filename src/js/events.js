@@ -56,11 +56,19 @@ const loadEventData = googleSheetsUrl => {
   )
   createEventCard(
     "root",
+<<<<<<< HEAD
     "Bake Sale",
     "Come support our club by buying cake pops from our stall. Help us raise money so we can plan some amazing workshops for our members.",
     "SU Lobby",
     "Tuesday Sept. 27nd",
     "11am-6pm",
+=======
+    "Fall 2022 Kick Off",
+    "Join us for our Fall Kickoff event. Come meet out officers, checkout our workshop lineup, and other event plans for the semester.",
+    "SCI 2.210",
+    "Tuesday Sept. 27th",
+    "7 PM",
+>>>>>>> 3b4f1b9003290f309630421fe57c704aae522f1b
     500,
     310,
     "",
