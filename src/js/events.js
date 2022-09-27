@@ -46,8 +46,8 @@ const loadEventData = googleSheetsUrl => {
     "root",
     "Fall 2022 Kick Off",
     "Join us for our Fall Kickoff event. Come meet out officers, checkout our workshop lineup, and learn about other events we plan on hosting during this semester.",
-    "SCI 2.210",
-    "Tuesday Sept. 27th",
+    "SCI 2.210 |",
+    "Tuesday Sept. 27th |",
     "7 PM",
     500,
     310,
@@ -58,12 +58,12 @@ const loadEventData = googleSheetsUrl => {
     "root",
     "Bake Sale",
     "Come support our club by buying cake pops from our stall. Help us raise money so we can plan some amazing workshops for our members.",
-    "SU Lobby",
-    "Tuesday Sept. 27nd",
-    "11am-6pm",
+    "TBD",
+    "",
+    "",
     500,
     310,
-    "",
+    "POSTPONED",
     ""
   )
   
@@ -160,7 +160,7 @@ const createEventCard = (
             ${event_description}
             </p>
             <div class="pt-md-4 text-center">
-            <i class="fas fa-map-marker-alt"></i> ${event_location} | ${event_date}  | ${event_time}
+            <i class="fas fa-map-marker-alt"></i> ${event_location}  ${event_date}   ${event_time}
             </div>
             <a href=${rsvp_link} target="_blank">
               <div class="text-center" id="rsvp-container" style="margin-top:20px; height:50px; padding:5px; border-radius: 10px; vertical-align: middle">
