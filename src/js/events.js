@@ -44,27 +44,27 @@ const loadEventData = googleSheetsUrl => {
   $("#root").addClass("justify-content-center");
   createEventCard(
     "root",
-    "Fall 2022 Kick Off",
-    "Join us for our Fall Kickoff event. Come meet out officers, checkout our workshop lineup, and learn about other events we plan on hosting during this semester.",
-    "SCI 2.210 |",
-    "Tuesday Sept. 27th |",
-    "7 PM",
+    "Reach Workshop Pt. 1",
+    "Join us for our first workshop of the semester. Come learn about building React projects from scratch",
+    "TBD |",
+    "Thursday Nov. 10th |",
+    "7:00-8:30 PM",
     500,
     310,
     " RSVP",
-    "https://forms.gle/biD9n93TfdXkKayo7"
+    "https://forms.gle/BbuztaWc5JZNEfnf8"
   )
   createEventCard(
     "root",
-    "Bake Sale",
-    "Come support our club by buying cake pops from our stall. Help us raise money so we can plan some amazing workshops for our members.",
-    "TBD",
-    "",
-    "",
+    "React Workshop Pt. 2",
+    "Continuation of the React Workshop Series. Come learn about building React projects from scratch",
+    "TBD |",
+    "Wednesday Nov. 16th |",
+    "7:00-8:30 PM",
     500,
     310,
-    "POSTPONED",
-    ""
+    " RSVP",
+    "https://forms.gle/QbiBSBrVW7JogQeQ8"
   )
   
   /*
@@ -147,7 +147,7 @@ const createEventCard = (
 
   let card = $('<div class="event-card mt-3 mx-2"></div>');
   card.width(width);
-  card.height(height);
+  //card.height(height);
   card_content_container = $("<div class='event-card-container'>");
 
   card_foreground_string = `
@@ -159,6 +159,7 @@ const createEventCard = (
             <p id="event_description" class="text-center" style="font-size:.9rem;">
             ${event_description}
             </p>
+            <div class='pt-2'></div>
             <div class="pt-md-4 text-center">
             <i class="fas fa-map-marker-alt"></i> ${event_location}  ${event_date}   ${event_time}
             </div>

@@ -32,7 +32,8 @@
   <title>Hack To Help</title>
 </head>
 <div id="backdrop" class="officer-backdrop background-tint">
-  <nav id="hnavBar" class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top pb-5">
+  <div class="pt-4"></div>
+  <nav id="hnavBar" class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
     <a class="navbar-brand" href="#"><img id="navlogo" src="./src/imgs/logolight.png" style="width:25%;height:25%"
         alt="logo" /></a>
     <button id="navToggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
@@ -59,6 +60,7 @@
       </ul>
     </div>
   </nav>
+  <div class="pt-3"></div>
   <div class="pt-5"></div>
   <div class="pt-5"></div>
   <div class="pt-5"></div>
@@ -73,6 +75,80 @@
       </p>
     </div>
   </div>
+  <div class="pt-5"></div>
+  <div class="pt-5"></div>
+  <div class="pt-5"></div>
+  <div class="pt-5"></div>
+  <div class="pt-5"></div>
+  <div class="pt-5"></div>
+  <div id="upcoming-events" class="py-5">
+    <div id="upcoming-events-section">
+      <div class="container">
+        <h1 class="large-title text-center pb-5">Upcoming Events</h1>
+        <div class="d-flex align-items-center justify-content-start flex-wrap" id="root">
+          <!-- Events get injected here-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pt-5"></div>
+  <div class="pt-5"></div>
+  <section class="our-friends-section pt-5">
+    <div class="container">
+      <h1 class="large-title text-left pb-5 text-center">Our Friends</h1>
+      <div id="our-friends" class="text-center pb-5 ">
+        <a href="https://uxutd.com/" target="_blank" class="mx-md-5"><img
+            src="./src/imgs/our_friends/UX Club Logo (Color).png" class="my-3 our-friends-picture" alt="UX Club" />
+        </a>
+        <a href="https://pivotal.io/" target="_blank" class="mx-md-5"><img src="./src/imgs/our_friends/Pivotal Logo.png"
+            class="my-3 our-friends-picture" alt="Pivotal" />
+        </a>
+        <a href="https://witb-utd.wixsite.com/home" target="_blank" class="mx-md-5"><img
+            src="./src/imgs/our_friends/witb_logo.png" class="my-3 our-friends-picture"
+            alt="Women in Technoloy and Business" />
+        </a>
+      </div>
+    </div>
+  </section>
+  <div class="pt-5"></div>
+  <div class="pt-5"></div>
+  <section class="footer">
+    <div class="container ">
+      <!--
+      <div class="pt-5"></div>
+      <div class="pt-md-5"></div>
+      -->
+      <h5>Sign up for updates</h5>
+      <div class="row ">
+        <div class="col-md-4 offset-sm-0 col-sm-3">
+          <div id="email-form ">
+            <form
+              action="https://hacktohelp.us20.list-manage.com/subscribe/post?u=9d9dde42077a7ca49677e8c3b&amp;id=d559bec18b"
+              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+              target="_blank" novalidate>
+              <input class="form-control" type="email" value="" name="EMAIL" placeholder="your email address" />
+              <button type="submit" class="btn btn-light mb-2 mt-2" onclick="submitForm()">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-3 offset-md-5">
+          <div id="footer-socials" class="d-flex justify-content-center">
+            <a href="https://www.facebook.com/HackToHelpUTD/" target="_blank"><i
+                class="fab fa-facebook-square mx-2 fa-3x"></i></a>
+            <a href="https://www.instagram.com/hacktohelputd/" target="_blank"><i
+                class="fab fa-instagram mx-2 fa-3x"></i></a>
+            <a href="https://twitter.com/hacktohelpUTD" target="_blank"><i
+                class="fab fa-twitter-square mx-2 fa-3x"></i></a>
+            <a href="https://github.com/HackToHelpUTD" target="_blank">
+              <i class="fab fa-github-square mx-2 fa-3x"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="pt-5"></div>
 </div>
 <!--
 <div class="alert">
@@ -84,66 +160,7 @@
   </a>
 </div>
 -->
-<div id="upcoming-events" class="py-5">
-  <div id="upcoming-events-section">
-    <div class="container">
-      <h1 class="large-title text-center pb-5">Upcoming Events</h1>
-      <div class="d-flex align-items-center justify-content-start flex-wrap" id="root">
-        <!-- Events get injected here-->
-      </div>
-    </div>
-  </div>
-</div>
-<section class="our-friends-section pt-5">
-  <div class="container">
-    <h1 class="large-title text-left pb-5 text-center">Our Friends</h1>
-    <div id="our-friends" class="text-center pb-5 ">
-      <a href="https://uxutd.com/" target="_blank" class="mx-md-5"><img
-          src="./src/imgs/our_friends/UX Club Logo (Color).png" class="my-3 our-friends-picture" alt="UX Club" />
-      </a>
-      <a href="https://pivotal.io/" target="_blank" class="mx-md-5"><img src="./src/imgs/our_friends/Pivotal Logo.png"
-          class="my-3 our-friends-picture" alt="Pivotal" />
-      </a>
-      <a href="https://witb-utd.wixsite.com/home" target="_blank" class="mx-md-5"><img
-          src="./src/imgs/our_friends/witb_logo.png" class="my-3 our-friends-picture"
-          alt="Women in Technoloy and Business" />
-      </a>
-    </div>
-  </div>
-</section>
-<section class="footer">
-  <div class="container ">
-    <div class="pt-5"></div>
-    <div class="pt-md-5"></div>
-    <h5>Sign up for updates</h5>
-    <div class="row ">
-      <div class="col-md-4 offset-sm-0 col-sm-3">
-        <div id="email-form ">
-          <form
-            action="https://hacktohelp.us20.list-manage.com/subscribe/post?u=9d9dde42077a7ca49677e8c3b&amp;id=d559bec18b"
-            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-            target="_blank" novalidate>
-            <input class="form-control" type="email" value="" name="EMAIL" placeholder="your email address" />
-            <button type="submit" class="btn btn-light mb-2 mt-2" onclick="submitForm()">
-              Submit
-            </button>
-          </form>
-        </div>
-      </div>
-      <div class="col-md-3 offset-md-5">
-        <div id="footer-socials" class="d-flex justify-content-center">
-          <a href="https://www.facebook.com/HackToHelpUTD/" target="_blank"><i
-              class="fab fa-facebook-square mx-2 fa-3x"></i></a>
-          <a href="https://www.instagram.com/hacktohelputd/" target="_blank"><i
-              class="fab fa-instagram mx-2 fa-3x"></i></a>
-          <a href="https://twitter.com/hacktohelpUTD" target="_blank"><i
-              class="fab fa-twitter-square mx-2 fa-3x"></i></a>
-          <a href="https://github.com/HackToHelpUTD" target="_blank">
-            <i class="fab fa-github-square mx-2 fa-3x"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
+
 
 </html>

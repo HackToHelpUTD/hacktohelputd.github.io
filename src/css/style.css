@@ -2,14 +2,51 @@
 .navbar {
   font-family: "Muli";
   font-size: 2em;
+  width: 95%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-top: 2.5%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  border-radius: 25px;
+  background: linear-gradient(
+    135deg,
+    rgb(116, 10, 60, 0.6),
+    rgb(164, 69, 101, 0.6),
+    rgb(212, 129, 143, 0.6)
+  );
+  animation: gradient 15s ease infinite;
+  /*background: rgba(212, 129, 143, 0.3);*/
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(4px);
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 /* Index Page */
 .officer-backdrop {
   background-image: url("../imgs/officer_headshots/current/Team.jpg");
   background-position: center;
   background-attachment: fixed;
-  height: 700px;
   background-size: cover;
+}
+
+.gradient-backdrop {
+  background: linear-gradient(rgba(69, 6, 35, 0.7), rgba(69, 6, 35, 0.5));
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
 }
 
 h1,
@@ -19,6 +56,10 @@ h4,
 h5,
 h6 {
   font-family: "Poppins";
+}
+
+body {
+  background-color:rgb(69, 6, 35);
 }
 
 a {
@@ -39,10 +80,9 @@ a:hover {
 }
 
 .background-tint {
-  background-color: rgba(69, 6, 35, 0.55);
+  background-color: rgba(69, 6, 35, 0.47);
   background-blend-mode: multiply;
 }
-
 
 /* The alert message box */
 .alert {
@@ -71,7 +111,30 @@ a:hover {
 }
 
 #upcoming-events {
-  height: 100%;
+  /* Changes start here */
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  border-radius: 25px;
+  position: relative;
+  /*
+  background: linear-gradient(
+    135deg,
+    rgb(116, 10, 60, 0.6),
+    rgb(164, 69, 101, 0.6),
+    rgb(212, 129, 143, 0.6)
+  );
+  */
+  background-color: rgba(255, 255, 255, 0.15);
+  /*background: rgba(212, 129, 143, 0.3);*/
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  animation: gradient 15s ease infinite;
+  backdrop-filter: blur(5px);
+  /* Changed end here */
+}
+
+#upcoming-events-section {
+  color: #fafafa;
 }
 
 #our-friends {
@@ -87,7 +150,25 @@ a:hover {
   width: 45%;
 }
 .our-friends-section {
-  background-color: #fafafa;
+  position: relative;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  border-radius: 25px;
+  position: relative;
+  /*
+  background: linear-gradient(
+    135deg,
+    rgb(116, 10, 60, 0.6),
+    rgb(164, 69, 101, 0.6),
+    rgb(212, 129, 143, 0.6)
+  );
+  */
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+
+  backdrop-filter: blur(5px);
+  color: #fafafa;
 }
 
 .our-friends-picture {
@@ -108,6 +189,7 @@ a:hover {
     background-attachment: scroll;
     height: 700px;
     background-size: cover;
+    position:absolute;
   }
 }
 
@@ -115,13 +197,23 @@ a:hover {
 
 .footer {
   color: white;
-  background: rgb(0, 0, 0);
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  border-radius: 25px;
+  position: relative;
+  /*
   background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(69, 6, 35, 1) 100%
+    135deg,
+    rgb(116, 10, 60, 0.6),
+    rgb(164, 69, 101, 0.6),
+    rgb(212, 129, 143, 0.6)
   );
-  height: 280px;
+  */
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(5px);
+  padding: 3%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -145,6 +237,8 @@ a .fab {
   background-size: cover;
   background-color: rgba(69, 6, 35, 0.8);
   background-blend-mode: multiply;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .ourevents-backdrop {
@@ -154,12 +248,15 @@ a .fab {
   background-size: cover;
   background-color: rgba(69, 6, 35, 0.8);
   background-blend-mode: multiply;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .about-title {
   font-family: "Muli";
   font-weight: 700;
   color: white;
+  text-align: center;
 }
 
 .about-info {
@@ -169,13 +266,32 @@ a .fab {
 }
 /* Team Page */
 #currentofficers {
-  background-color: rgba(69, 6, 35, 1);
+  background-color: transparent;
   color: white;
 }
 
 #pastofficers {
-  background-color: rgba(69, 6, 35, 1);
+  background-color: transparent;
   color: white;
+}
+
+#officer-div {
+  color: white;
+  border-radius: 25px;
+  width: 95%;
+  position: relative;
+  /*
+  background: linear-gradient(
+    135deg,
+    rgb(116, 10, 60, 0.6),
+    rgb(164, 69, 101, 0.6),
+    rgb(212, 129, 143, 0.6)
+  );
+  */
+  padding: 0px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(5px);
 }
 
 .officer-cards {
@@ -202,7 +318,22 @@ a .fab {
 }
 
 #ouradvisor {
-  background-color: rgba(69, 6, 35, 1);
+  color: white;
+  border-radius: 25px;
+  width: 100%;
+  position: relative;
+  /*
+  background: linear-gradient(
+    135deg,
+    rgb(116, 10, 60, 0.6),
+    rgb(164, 69, 101, 0.6),
+    rgb(212, 129, 143, 0.6)
+  );
+  */
+  padding: 0px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(5px);
   color: white;
 }
 
@@ -239,7 +370,6 @@ fade:not(.show) {
 
 .event-card {
   width: 100%;
-  height: 100%;
   border-radius: 20px;
   border-width: 10px;
   overflow: hidden;
@@ -254,7 +384,6 @@ fade:not(.show) {
 
 .event-card-container {
   position: relative;
-  height: 100%;
   border-radius: inherit;
 }
 
@@ -301,7 +430,23 @@ fade:not(.show) {
   height: 316px;
 }
 #source-code-section {
-  background-color: #fafafa;
+  color: white;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  border-radius: 25px;
+  position: relative;
+  /*
+  background: linear-gradient(
+    135deg,
+    rgb(116, 10, 60, 0.6),
+    rgb(164, 69, 101, 0.6),
+    rgb(212, 129, 143, 0.6)
+  );
+  */
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(5px);
 }
 
 /*** Join Us****/
@@ -309,18 +454,46 @@ fade:not(.show) {
   background-image: url("../imgs/joinus/joinus-banner.png");
   background-position: center;
   background-attachment: fixed;
-  height: 500px;
   background-size: cover;
 }
+
+.container-fluid {  
+  padding: 3%;
+}
+
+#join-us-div {
+  position: relative;
+  color: white;
+  width: 95%;
+  padding-top: 5%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  border-radius: 25px;
+  position: relative;
+  /*
+  background: linear-gradient(
+    135deg,
+    rgb(116, 10, 60, 0.6),
+    rgb(164, 69, 101, 0.6),
+    rgb(212, 129, 143, 0.6)
+  );
+  */
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(5px);
+}
+
 .joinus-description {
-  height: 100px;
+  text-align: center;
 }
 .linklist-container {
-  border-right: thin solid black;
-  height: 250px;
+  margin-top: 10%;
+  text-align: center;
+  vertical-align: middle;
 }
 .linklist {
   padding: 0;
+  vertical-align: middle;
 }
 .linklist li {
   list-style-type: none;
@@ -333,7 +506,7 @@ fade:not(.show) {
   border: 0;
   padding: 0;
   margin: 0;
-  color: rgb(69, 6, 35);
+  color: rgb(69, 6, 35)
 }
 .linklist li > a:hover {
   text-decoration: none;
@@ -344,10 +517,142 @@ fade:not(.show) {
 @media only screen and (max-width: 768px) {
   .linklist-container {
     border-right: none;
-    height: 200px;
   }
 
   .joinus-backdrop {
     background-attachment: scroll;
   }
+}
+
+/*family=Exo:400,700');*/
+
+body{
+    font-family: 'Exo', sans-serif;
+}
+
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+    
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(212, 129, 143, 0.6);
+    animation: animate 15s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(-2000px) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(0px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
 }

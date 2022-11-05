@@ -4,7 +4,7 @@ submitForm = () => {
 };
 
 const homeNavBarAtTop =
-  "navbar navbar-expand-lg navbar-dark bg-transparent fixed-top pb-5";
+  "navbar navbar-expand-lg navbar-dark bg-transparent fixed-top";
 const homeNavBarBelow =
   "navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm";
 const logoPath = "./src/imgs/logo";
