@@ -46,7 +46,7 @@ const loadEventData = googleSheetsUrl => {
     "root",
     "Reach Workshop Pt. 1",
     "Join us for our first workshop of the semester. Come learn about building React projects from scratch",
-    "TBD |",
+    "GR 4.301 |",
     "Thursday Nov. 10th |",
     "7:00-8:30 PM",
     500,
