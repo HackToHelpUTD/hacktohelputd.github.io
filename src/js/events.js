@@ -54,19 +54,6 @@ const loadEventData = googleSheetsUrl => {
     " RSVP",
     "https://forms.gle/BbuztaWc5JZNEfnf8"
   )
-  createEventCard(
-    "root",
-    "React Workshop Pt. 2",
-    "Continuation of the React Workshop Series. Come learn about building React projects from scratch",
-    "TBD |",
-    "Wednesday Nov. 16th |",
-    "7:00-8:30 PM",
-    500,
-    310,
-    " RSVP",
-    "https://forms.gle/QbiBSBrVW7JogQeQ8"
-  )
-  
   /*
   createEventCard(
     "root",
